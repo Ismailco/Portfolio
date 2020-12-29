@@ -1,4 +1,1 @@
 theme: jekyll-theme-cayman
-
-- name: HTML Preview
-  uses: pavi2410/html-preview-action@v2
