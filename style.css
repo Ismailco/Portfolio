@@ -67,27 +67,34 @@ p {
   font-size: 1.2em;
   width: 80%;
 }
-.projects {
+
+.projects-section {
   background-color: #d2d2d2;
+  text-align: center;
+  padding: 80px;
+}
+
+.projects-section h2 {
+  padding-bottom: 30px;
+  font-size: 1.9em;
+}
+
+.projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 100px;
 }
 
 .project-tile {
   width: 250px;
   height: 230px;
   margin: 10px auto;
+  padding: 10px;
 }
 
 .project-img {
   width: 99%;
-}
-
-.project-title {
-  text-align: center;
 }
 
 .contact {
