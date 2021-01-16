@@ -26,6 +26,7 @@ a {
   background-size: cover;
   line-height: 1.7em;
   font-size: 2em;
+  z-index: 0;
 }
 
 .header {
@@ -58,7 +59,7 @@ a {
 
 .about {
   background-color: #e7e7e7;
-  padding: 80px;
+  padding: 100px;
 }
 
 p {
@@ -71,7 +72,7 @@ p {
 .projects-section {
   background-color: #d2d2d2;
   text-align: center;
-  padding: 80px;
+  padding: 100px;
 }
 
 .projects-section h2 {
