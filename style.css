@@ -203,6 +203,10 @@ i {
   }
 
   .navbar {
-    margin-right: 3px;
+    margin-right: 1px;
+  }
+
+  .navbar s {
+    padding: 7px;
   }
 }
