@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +11,13 @@
 body {
   line-height: 2em;
   background-color: #c7c7c7;
+  font-family: "Open Sans", sans-serif;
 }
 
+h2,
+h1 {
+  font-family: "Charm", cursive;
+}
 a {
   text-decoration: none;
   color: rgb(58, 58, 58);
@@ -59,7 +68,7 @@ a {
 
 .about {
   background-color: #e7e7e7;
-  padding: 100px;
+  padding: 100px 30px;
 }
 
 p {
@@ -72,11 +81,11 @@ p {
 .projects-section {
   background-color: #d2d2d2;
   text-align: center;
-  padding: 100px;
+  padding: 50px 100px 100px 100px;
 }
 
 .projects-section h2 {
-  padding-bottom: 30px;
+  padding-bottom: 90px;
   font-size: 1.9em;
 }
 
@@ -91,11 +100,10 @@ p {
   width: 250px;
   height: 230px;
   margin: 10px auto;
-  padding: 10px;
 }
 
 .project-img {
-  width: 99%;
+  width: 100%;
 }
 
 .contact {
@@ -172,7 +180,7 @@ i {
   }
 
   .contact {
-    padding: 10px;
+    padding-bottom: 10px;
   }
   .project-tile {
     width: 250px;
@@ -181,5 +189,14 @@ i {
 
   .project-img {
     width: 100%;
+  }
+
+  .projects-section {
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  p {
+    width: 90%;
   }
 }
