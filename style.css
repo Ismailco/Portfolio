@@ -49,6 +49,7 @@ a {
   z-index: 2;
   background-color: rgba(250, 250, 250, 0.4);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .navbar {
@@ -185,6 +186,7 @@ i {
   .project-tile {
     width: 250px;
     height: 230px;
+    margin: 0 auto;
   }
 
   .project-img {
@@ -197,6 +199,10 @@ i {
   }
 
   p {
-    width: 90%;
+    width: 100%;
+  }
+
+  .navbar {
+    margin-right: 3px;
   }
 }
