@@ -243,7 +243,7 @@ i {
   color: rgb(58, 58, 58);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
-  height: 100vh;
+  /* height: 100vh; */
   /* backdrop-filter: blur(1px); */
 }
 
@@ -252,6 +252,7 @@ i {
   padding: 20px 50px;
   border-radius: 20px;
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border: solid 2px rgba(255, 255, 255, 0.1);
   margin-top: 100px;
 }
