@@ -6,7 +6,7 @@
 
 <img src="./screenshot.png" alt="Preview image" />
 
-[Live Demo](https:/ismailcourr.ml)
+[Live Demo](https://ismailco.github.io/Portfolio2.0/index.html)
 
 ### Built with
 

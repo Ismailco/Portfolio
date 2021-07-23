@@ -2,15 +2,22 @@ let arrowActive = document.querySelector(".activeArrow");
 let languageList = document.querySelector(".coll-item-list");
 
 // styles
-languageList.style.display = "flex";
+languageList.style.visibility = "visible";
+languageList.style.maxHeight = "500px";
+languageList.style.transition =
+  "visibility 800ms, opacity 800ms, max-height 800ms";
 arrowActive.style.transition = "transform 600ms";
 
 arrowActive.addEventListener("click", (e) => {
-  if (languageList.style.display == "flex") {
-    languageList.style.display = "none";
+  if (languageList.style.visibility == "visible") {
+    languageList.style.visibility = "hidden";
+    languageList.style.maxHeight = "0px";
+    languageList.style.opacity = "0";
     e.target.style.transform = "rotate(0deg)";
-  } else if (languageList.style.display == "none") {
-    languageList.style.display = "flex";
+  } else if (languageList.style.visibility == "hidden") {
+    languageList.style.visibility = "visible";
+    languageList.style.maxHeight = "500px";
+    languageList.style.opacity = "100";
     e.target.style.transform = "rotate(90deg)";
   }
 });
@@ -29,3 +36,5 @@ document.querySelectorAll(".unactiveArrow").forEach((item) => {
     }
   });
 });
+
+// Hamburger menu
