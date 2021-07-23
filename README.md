@@ -1,37 +1,26 @@
 # Portfolio
 
-> This is my first portfolio project.
+> This is a portfolio project for Microverse assignment
 
-![screenshot](./screenshot.png)
+### Preview
 
- 
+<img src="./screenshot.png" alt="Preview image" />
 
-## Built With
+[Live Demo](https:/ismailcourr.ml)
 
-- HTML
-- CSS
-- FlexBox
-- Grid
+### Built with
 
-## Live Demo
-
-[Live Demo Link](https://ismailcourr.ml)
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
 
 ## Author
 
--  [My Website](https://www.ismailcourr.ml)
--  [Twitter](https://www.twitter.com/ismailcourr)
--  [Github](https://github.com/Ismailco)
--  [Linkedin](https://www.linkedin.com/in/ismailcourr/)
--  [Frontend Mentor](https://www.frontendmentor.io/profile/yourusername)
--  [DevChallenges](https://devchallenges.io/portfolio/Ismailco)
--  [Codecademy](https://www.codecademy.com/profiles/Digitalcitizen96)
-
-
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- [My Website](https://www.ismailcourr.ml)
+- [Twitter](https://www.twitter.com/ismailcourr)
+- [Github](https://github.com/Ismailco)
+- [Linkedin](https://www.linkedin.com/in/ismailcourr/)
 
 ## Show your support
 
