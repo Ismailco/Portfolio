@@ -283,15 +283,12 @@ a {
   color: #acb7c3;
 }
 
-.activeArrow {
-  transform: rotate(90deg);
-}
-
 .coll-item-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   flex-basis: 90vw;
+  visibility: "hidden";
 }
 
 .coll-item {
@@ -306,6 +303,10 @@ a {
 .coll-icon {
   margin-right: 16px;
   margin-left: 12px;
+}
+
+.coll-icon:nth-of-type(3) {
+  margin-left: 20px;
 }
 
 .coll-text {
