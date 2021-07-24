@@ -305,10 +305,6 @@ a {
   margin-left: 12px;
 }
 
-.coll-icon:nth-of-type(3) {
-  margin-left: 20px;
-}
-
 .coll-text {
   font-size: 15px;
   font-weight: 500;
@@ -388,12 +384,20 @@ hr {
 
 .form-name input:valid,
 .form-email input:valid,
-.form-textarea textarea:valid {
+.form-textarea textarea:valid,
+.form-name input:valid:focus,
+.form-email input:valid:focus,
+.form-textarea textarea:valid:focus {
   border-bottom: solid 5px #3de43d;
   border-radius: 8px;
 }
 
-.form-email input:invalid {
+.form-name input:invalid,
+.form-email input:invalid,
+.form-textarea textarea:invalid,
+.form-name input:invalid:focus,
+.form-email input:invalid:focus,
+.form-textarea textarea:invalid:focus {
   border-bottom: solid 5px #e71c1c;
   border-radius: 8px;
 }
