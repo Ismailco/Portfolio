@@ -31,8 +31,8 @@ body {
   height: 100vh;
   list-style: none;
   background-color: #000;
-  /* display: none; */
-  visibility: hidden;
+  display: none;
+  /* visibility: hidden; */
   position: absolute;
   top: 0px;
   right: -200px;

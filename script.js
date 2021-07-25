@@ -47,19 +47,21 @@ let menuButton = document.querySelector(".menu-btn");
 let mobileMenu = document.querySelector(".mobile-menu");
 let remButton = document.querySelector(".fa-times");
 // transition style
-
+mobileMenu.style.right = "-400px";
 mobileMenu.style.transition = "right 800ms";
 
 menuButton.addEventListener("click", (e) => {
   e.target.style.display = "none";
-  mobileMenu.style.visibility = "visible";
-  mobileMenu.style.right = "0px";
+  mobileMenu.style.display = "block";
+  setTimeout(() => {
+    mobileMenu.style.right = "0px";
+  }, 1);
 });
 
 remButton.addEventListener("click", (e) => {
   mobileMenu.style.right = "-400px";
   setTimeout(() => {
-    mobileMenu.style.visibility = "hidden";
+    mobileMenu.style.display = "none";
   }, 900);
   menuButton.style.display = "block";
 });
