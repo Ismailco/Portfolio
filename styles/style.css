@@ -17,10 +17,42 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
 }
 
 .desktop-navbar {
   display: none;
+}
+
+.mobile-menu {
+  padding: 100px;
+  height: 100vh;
+  list-style: none;
+  background-color: #000;
+  /* display: none; */
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  right: -200px;
+}
+
+.mobile-menu-item {
+  padding-bottom: 30px;
+}
+
+.mobile-menu a {
+  color: #a7a4a4;
+  font-size: 20px;
+}
+
+.fa-times {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
 }
 
 .logo {

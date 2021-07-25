@@ -1,29 +1,5 @@
 let arrowActive = document.querySelector(".activeArrow");
-// let languageList = document.querySelector(".coll-item-list");
 
-// styles
-// languageList.style.visibility = "visible";
-// languageList.style.maxHeight = "500px";
-// languageList.style.transition =
-//   "visibility 800ms, opacity 800ms, max-height 800ms";
-// arrowActive.style.transition = "transform 600ms";
-
-// arrowActive.addEventListener("click", (e) => {
-//   if (languageList.style.visibility == "visible") {
-//     languageList.style.visibility = "hidden";
-//     languageList.style.maxHeight = "0px";
-//     languageList.style.opacity = "0";
-//     e.target.style.transform = "rotate(0deg)";
-//   } else if (languageList.style.visibility == "hidden") {
-//     languageList.style.visibility = "visible";
-//     languageList.style.maxHeight = "500px";
-//     languageList.style.opacity = "100";
-//     e.target.style.transform = "rotate(90deg)";
-//   }
-// });
-//
-//
-// test multiple colapse list
 document.querySelectorAll(".fa-arrow-right").forEach((item) => {
   // item.style.transform = "rotate(0deg)";
   let colapsibleChildrens = item.parentNode.parentNode.children;
@@ -40,19 +16,17 @@ document.querySelectorAll(".fa-arrow-right").forEach((item) => {
       colapsibleChildrens[2].style.visibility = "visible";
       languageList.style.maxHeight = "0px";
       languageList.style.opacity = "0";
-      e.target.style.transform = "rotate(90deg)";
     } else if (languageList.style.visibility == "hidden") {
       languageList.style.visibility = "visible";
       colapsibleChildrens[2].style.visibility = "hidden";
       languageList.style.maxHeight = "500px";
       languageList.style.opacity = "1";
-      e.target.style.transform = "rotate(0deg)";
     }
   });
 });
 //
 //
-// rotate the inactive arrows
+// rotate the arrows
 document.querySelectorAll(".arrow").forEach((item) => {
   item.style.transform = "rotate(0deg)";
   item.addEventListener("click", (e) => {
@@ -68,3 +42,24 @@ document.querySelectorAll(".arrow").forEach((item) => {
 });
 
 // Hamburger menu
+
+let menuButton = document.querySelector(".menu-btn");
+let mobileMenu = document.querySelector(".mobile-menu");
+let remButton = document.querySelector(".fa-times");
+// transition style
+
+mobileMenu.style.transition = "right 800ms";
+
+menuButton.addEventListener("click", (e) => {
+  e.target.style.display = "none";
+  mobileMenu.style.visibility = "visible";
+  mobileMenu.style.right = "0px";
+});
+
+remButton.addEventListener("click", (e) => {
+  mobileMenu.style.right = "-400px";
+  setTimeout(() => {
+    mobileMenu.style.visibility = "hidden";
+  }, 900);
+  menuButton.style.display = "block";
+});
