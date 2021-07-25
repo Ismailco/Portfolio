@@ -32,10 +32,11 @@ body {
   list-style: none;
   background-color: #000;
   display: none;
-  /* visibility: hidden; */
   position: absolute;
   top: 0px;
   right: -200px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .mobile-menu-item {

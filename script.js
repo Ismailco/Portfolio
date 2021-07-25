@@ -49,7 +49,7 @@ let remButton = document.querySelector(".fa-times");
 // transition style
 mobileMenu.style.right = "-400px";
 mobileMenu.style.transition = "right 800ms";
-
+// listen for a click on the menu button and X button
 menuButton.addEventListener("click", (e) => {
   e.target.style.display = "none";
   mobileMenu.style.display = "block";
@@ -64,4 +64,15 @@ remButton.addEventListener("click", (e) => {
     mobileMenu.style.display = "none";
   }, 900);
   menuButton.style.display = "block";
+});
+
+// listen for a click on any link on the menu
+document.querySelectorAll(".mobile-menu-item").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    mobileMenu.style.right = "-400px";
+    setTimeout(() => {
+      mobileMenu.style.display = "none";
+    }, 900);
+    menuButton.style.display = "block";
+  });
 });
