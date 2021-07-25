@@ -482,6 +482,10 @@ hr {
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .desktop-navbar {
     display: flex;
     margin-right: 154px;
