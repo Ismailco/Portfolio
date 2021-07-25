@@ -51,7 +51,7 @@ mobileMenu.style.right = "-400px";
 mobileMenu.style.transition = "right 800ms";
 // listen for a click on the menu button and X button
 menuButton.addEventListener("click", (e) => {
-  e.target.style.display = "none";
+  // e.target.style.display = "none";
   mobileMenu.style.display = "block";
   setTimeout(() => {
     mobileMenu.style.right = "0px";

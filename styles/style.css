@@ -16,10 +16,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   position: fixed;
   z-index: 200;
   width: 100%;
+  height: 80px;
+  box-shadow: 0px 0px 10px rgb(109, 109, 109);
 }
 
 .desktop-navbar {
@@ -30,13 +34,15 @@ body {
   padding: 100px 200px 20px 40px;
   height: 85vh;
   list-style: none;
-  background-color: #292929;
+  background-color: hsla(0, 0%, 16%, 0.98);
   display: none;
   position: absolute;
   top: 0px;
   right: -200px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .mobile-menu-item {
@@ -54,6 +60,10 @@ body {
   top: 20px;
   right: 20px;
   font-size: 25px;
+}
+
+.fa-times:active {
+  font-size: 24px;
 }
 
 .logo {
@@ -76,6 +86,10 @@ a {
   color: #6070ff;
   margin: 24px;
   width: 50px;
+}
+
+.menu-btn:active {
+  width: 49px;
 }
 
 .headline-section {
