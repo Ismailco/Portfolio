@@ -154,7 +154,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  margin-top: 114px;
+  padding-top: 90px;
   list-style: none;
 }
 
