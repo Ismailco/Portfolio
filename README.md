@@ -14,6 +14,7 @@
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- JavaScript
 
 ## Author
 
