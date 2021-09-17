@@ -172,9 +172,9 @@ a {
   box-shadow: 4px 4px 4px 4px hsla(234, 100%, 69%, 0.7);
 }
 
-.work-cardFirst {
+/* .work-cardFirst {
   margin: 88px 24px;
-}
+} */
 
 /* card styles */
 
@@ -560,7 +560,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 1156px;
-    height: 496px;
+    height: 446px;
   }
 
   .work-card-reverse {
