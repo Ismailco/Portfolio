@@ -112,6 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectListItemTwo = document.createElement('li');
     const projectListItemThree = document.createElement('li');
     const projectBtn = document.createElement('button');
+    projectBtn.classList.add('project_btn');
+    projectBtn.textContent = 'See this Project';
     project.classList.add('project');
     projectImg.classList.add('project_img');
     projectImg.setAttribute('src', projectPop[i].featuredImage);
@@ -126,8 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectListItemTwo.textContent = projectPop[i].technologiesTwo;
     projectListItemThree.classList.add('project_language');
     projectListItemThree.textContent = projectPop[i].technologiesThree;
-    projectBtn.classList.add('project_btn');
-    projectBtn.textContent = 'See this Project';
+
     projectList.append(projectListItemOne, projectListItemTwo, projectListItemThree);
     projectBody.append(projectHeading, projectList, projectBtn);
     project.append(projectImg, projectBody);
@@ -162,67 +163,66 @@ closeBtn.addEventListener('click', () => {
   projectPopup.innerHTML = '';
   miniImageCountainer.innerHTML = '';
 });
+setTimeout(() => {
+  document.querySelectorAll('.project_btn').forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      projectPopup.style.display = 'flex';
+      closeBtn.style.display = 'block';
 
-const projectLinks = document.querySelectorAll('.project_btn');
-projectLinks.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    projectPopup.style.display = 'flex';
-    closeBtn.style.display = 'block';
+      // create content
+      closeBtn.classList.add('fas', 'fa-times', 'popup_close');
 
-    // create content
-    closeBtn.classList.add('fas', 'fa-times', 'popup_close');
+      projectName.textContent = projectPop[index].name;
+      projectName.classList.add('popup_name');
 
-    projectName.textContent = projectPop[index].name;
-    projectName.classList.add('popup_name');
+      listItemOne.textContent = projectPop[index].technologiesOne;
+      listItemOne.classList.add('popup_language');
+      listItemTwo.textContent = projectPop[index].technologiesTwo;
+      listItemTwo.classList.add('popup_language');
+      listItemThree.textContent = projectPop[index].technologiesThree;
+      listItemThree.classList.add('popup_language');
+      list.classList.add('popup_languages');
+      list.append(listItemOne, listItemTwo, listItemThree);
 
-    listItemOne.textContent = projectPop[index].technologiesOne;
-    listItemOne.classList.add('popup_language');
-    listItemTwo.textContent = projectPop[index].technologiesTwo;
-    listItemTwo.classList.add('popup_language');
-    listItemThree.textContent = projectPop[index].technologiesThree;
-    listItemThree.classList.add('popup_language');
-    list.classList.add('popup_languages');
-    list.append(listItemOne, listItemTwo, listItemThree);
+      image.setAttribute('src', projectPop[index].featuredImage);
+      image.classList.add('popup_img');
+      slider.appendChild(image);
 
-    image.setAttribute('src', projectPop[index].featuredImage);
-    image.classList.add('popup_img');
-    slider.appendChild(image);
+      slider.classList.add('slider');
+      sliderCountainer.appendChild(slider);
 
-    slider.classList.add('slider');
-    sliderCountainer.appendChild(slider);
+      sliderCountainer.classList.add('slider_container');
 
-    sliderCountainer.classList.add('slider_container');
+      miniImage.setAttribute('src', projectPop[index].featuredImage);
+      miniImage.classList.add('popup_mini_img');
+      const miniImageTwo = miniImage.cloneNode(true);
+      const miniImageThree = miniImageTwo.cloneNode(true);
+      const miniImageFoor = miniImageThree.cloneNode(true);
+      miniImageCountainer.append(miniImage, miniImageTwo, miniImageThree, miniImageFoor);
+      miniImageCountainer.classList.add('mini_img');
 
-    miniImage.setAttribute('src', projectPop[index].featuredImage);
-    miniImage.classList.add('popup_mini_img');
-    const miniImageTwo = miniImage.cloneNode(true);
-    const miniImageThree = miniImageTwo.cloneNode(true);
-    const miniImageFoor = miniImageThree.cloneNode(true);
-    miniImageCountainer.append(miniImage, miniImageTwo, miniImageThree, miniImageFoor);
-    miniImageCountainer.classList.add('mini_img');
+      imageContainer.append(sliderCountainer, miniImageCountainer);
+      imageContainer.classList.add('img_slider');
 
-    imageContainer.append(sliderCountainer, miniImageCountainer);
-    imageContainer.classList.add('img_slider');
+      description.classList.add('popup_text');
+      description.textContent = projectPop[index].description;
 
-    description.classList.add('popup_text');
-    description.textContent = projectPop[index].description;
+      liveDemo.classList.add('popup_btn');
+      liveDemo.innerHTML = `<a href = "${projectPop[index].linkToLiveVersion}">See live <i class="fas fa-share-square"></i></a>`;
 
-    liveDemo.classList.add('popup_btn');
-    liveDemo.innerHTML = `<a href = "${projectPop[index].linkToLiveVersion}">See live <i class="fas fa-share-square"></i></a>`;
+      sourceCode.classList.add('popup_btn');
+      sourceCode.innerHTML = `<a href = "${projectPop[index].linkToSource}">See source <i class="fab fa-github"></i></a>`;
 
-    sourceCode.classList.add('popup_btn');
-    sourceCode.innerHTML = `<a href = "${projectPop[index].linkToSource}">See source <i class="fab fa-github"></i></a>`;
+      buttonContainer.classList.add('popup_buttons');
+      buttonContainer.append(liveDemo, sourceCode);
 
-    buttonContainer.classList.add('popup_buttons');
-    buttonContainer.append(liveDemo, sourceCode);
+      projectPopup.classList.add('project_pop');
+      projectPopup.append(closeBtn, projectName, list, imageContainer, description, buttonContainer);
 
-    projectPopup.classList.add('project_pop');
-    projectPopup.append(closeBtn, projectName, list, imageContainer, description, buttonContainer);
-
-    document.body.appendChild(projectPopup);
+      document.body.appendChild(projectPopup);
+    });
   });
-});
-
+}, 1);
 // form validation
 const form = document.querySelector('.form');
 const formEmail = document.querySelector('.input2');
