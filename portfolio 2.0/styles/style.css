@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 * {
   padding: 0;
@@ -339,7 +339,7 @@ a {
   display: flex;
   flex-direction: column;
   flex-basis: 90vw;
-  visibility: "hidden";
+  visibility: 'hidden';
 }
 
 .coll-item {
@@ -470,8 +470,7 @@ hr {
   border: none;
   font-size: 17px;
   font-weight: 500;
-  transition: color 500ms ease-in, background-color 500ms ease-in,
-    border 500ms ease-in-out;
+  transition: color 500ms ease-in, background-color 500ms ease-in, border 500ms ease-in-out;
 }
 
 .form-btn button:hover {
