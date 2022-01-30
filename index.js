@@ -98,6 +98,43 @@ const projectPop = [
   },
 ];
 
+// Create the project section
+const projectSection = document.querySelector('#projects_section');
+
+document.addEventListener('DOMContentLoaded', () => {
+  for (let i = 0; i < projectPop.length; i++) {
+    const project = document.createElement('article');
+    const projectImg = document.createElement('img');
+    const projectBody = document.createElement('div');
+    const projectHeading = document.createElement('h3');
+    const projectList = document.createElement('ul');
+    const projectListItemOne = document.createElement('li');
+    const projectListItemTwo = document.createElement('li');
+    const projectListItemThree = document.createElement('li');
+    const projectBtn = document.createElement('button');
+    project.classList.add('project');
+    projectImg.classList.add('project_img');
+    projectImg.setAttribute('src', projectPop[i].featuredImage);
+    projectImg.setAttribute('alt', 'project_image_preview');
+    projectBody.classList.add('project_body');
+    projectHeading.classList.add('project_name');
+    projectHeading.textContent = projectPop[i].name;
+    projectList.classList.add('project_languages');
+    projectListItemOne.classList.add('project_language');
+    projectListItemOne.textContent = projectPop[i].technologiesOne;
+    projectListItemTwo.classList.add('project_language');
+    projectListItemTwo.textContent = projectPop[i].technologiesTwo;
+    projectListItemThree.classList.add('project_language');
+    projectListItemThree.textContent = projectPop[i].technologiesThree;
+    projectBtn.classList.add('project_btn');
+    projectBtn.textContent = 'See this Project';
+    projectList.append(projectListItemOne, projectListItemTwo, projectListItemThree);
+    projectBody.append(projectHeading, projectList, projectBtn);
+    project.append(projectImg, projectBody);
+    projectSection.append(project);
+  }
+});
+
 // create html elements
 const projectPopup = document.createElement('div');
 const closeBtn = document.createElement('i');
