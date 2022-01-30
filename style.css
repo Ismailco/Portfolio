@@ -120,7 +120,6 @@ body {
   font-size: 14px;
   line-height: 21px;
   width: 288px;
-  height: 126px;
 }
 
 .social-links {
@@ -459,11 +458,19 @@ body {
   border: 1px solid #1a2236;
 }
 
+.about_btn a {
+  color: #fff;
+}
+
 .about_btn:hover {
   color: #1a2236;
   background-color: #e5e5e5;
   border: 1px solid #1a2236;
   cursor: pointer;
+}
+
+.about_btn a:hover {
+  color: #1a2236;
 }
 
 .about_btn:active {
@@ -773,6 +780,7 @@ body {
     background-repeat: no-repeat;
     background-size: 130px;
     flex-basis: 100%;
+    align-items: flex-start;
   }
 
   .background_img {
@@ -798,6 +806,10 @@ body {
     margin-left: 160px;
     width: 484px;
     margin-right: 94px;
+  }
+
+  .social-links {
+    margin-left: 160px;
   }
 
   .headline_btn {
@@ -1100,7 +1112,7 @@ body {
   }
 
   .input1 {
-    width: 260px;
+    width: 262px;
     height: 60px;
     border: 1px solid #e0e0e0;
     margin-bottom: 8px;
@@ -1108,7 +1120,7 @@ body {
   }
 
   .input2 {
-    width: 260px;
+    width: 262px;
     height: 60px;
     border: 1px solid #e0e0e0;
     margin-bottom: 8px;
