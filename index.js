@@ -59,7 +59,7 @@ const projectPop = [
   {
     name: 'Project name goes here',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featuredImage: 'img/project3.svg',
+    featuredImage: 'img/projects/card.png',
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Ruby on Rails',
     technologiesThree: 'JavaScript',
@@ -99,7 +99,7 @@ const projectPop = [
 ];
 
 // Create the project section
-const projectSection = document.querySelector('#projects_section');
+const projectSection = document.querySelector('.projects_container');
 
 document.addEventListener('DOMContentLoaded', () => {
   for (let i = 0; i < projectPop.length; i++) {
