@@ -37,14 +37,14 @@ document.querySelectorAll('.menu_link').forEach((link) => {
 // Create project object
 const projectPop = [
   {
-    name: 'Project name goes here',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featuredImage: 'img/project1.svg',
+    name: 'Marock music festival',
+    description: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
+    featuredImage: 'img/projects/marock/screenshot.png',
     technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'Ruby on Rails',
+    technologiesTwo: 'Flexbox',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: 'https://ismailcourr.ml',
-    linkToSource: 'https://ismailcourr.ml',
+    linkToLiveVersion: 'https://ismailco.github.io/First-capstone-project_Conference-page/',
+    linkToSource: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
   },
 ];
 
