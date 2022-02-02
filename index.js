@@ -39,7 +39,11 @@ const projectPop = [
   {
     name: 'Marock music festival',
     description: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
-    featuredImage: 'img/projects/marock/screenshot.png',
+    featuredImage: 'img/projects/marock/preview0.png',
+    miniImg1: 'img/projects/marock/preview0.png',
+    miniImg2: 'img/projects/marock/preview1.png',
+    miniImg3: 'img/projects/marock/preview2.png',
+    miniImg4: 'img/projects/marock/preview3.png',
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Flexbox',
     technologiesThree: 'JavaScript',
@@ -100,7 +104,10 @@ const slider = document.createElement('div');
 const image = document.createElement('img');
 
 const miniImageCountainer = document.createElement('div');
-const miniImage = document.createElement('img');
+const miniImageOne = document.createElement('img');
+const miniImageTwo = document.createElement('img');
+const miniImageThree = document.createElement('img');
+const miniImageFoor = document.createElement('img');
 const description = document.createElement('p');
 const buttonContainer = document.createElement('div');
 const liveDemo = document.createElement('button');
@@ -143,12 +150,16 @@ setTimeout(() => {
 
       sliderCountainer.classList.add('slider_container');
 
-      miniImage.setAttribute('src', projectPop[index].featuredImage);
-      miniImage.classList.add('popup_mini_img');
-      const miniImageTwo = miniImage.cloneNode(true);
-      const miniImageThree = miniImageTwo.cloneNode(true);
-      const miniImageFoor = miniImageThree.cloneNode(true);
-      miniImageCountainer.append(miniImage, miniImageTwo, miniImageThree, miniImageFoor);
+      miniImageOne.setAttribute('src', projectPop[index].miniImg1);
+      miniImageOne.classList.add('popup_mini_img');
+      miniImageTwo.setAttribute('src', projectPop[index].miniImg2);
+      miniImageTwo.classList.add('popup_mini_img');
+      miniImageThree.setAttribute('src', projectPop[index].miniImg3);
+      miniImageThree.classList.add('popup_mini_img');
+      miniImageFoor.setAttribute('src', projectPop[index].miniImg4);
+      miniImageFoor.classList.add('popup_mini_img');
+
+      miniImageCountainer.append(miniImageOne, miniImageTwo, miniImageThree, miniImageFoor);
       miniImageCountainer.classList.add('mini_img');
 
       imageContainer.append(sliderCountainer, miniImageCountainer);
@@ -170,9 +181,20 @@ setTimeout(() => {
       projectPopup.append(closeBtn, projectName, list, imageContainer, description, buttonContainer);
 
       document.body.appendChild(projectPopup);
+
+      // change mini image
+      const popMiniImg = document.querySelectorAll('.popup_mini_img');
+      popMiniImg.forEach((img, i) => {
+        img.style.border = 'none';
+        img.addEventListener('click', () => {
+          img.style.border = '1px solid #000';
+          image.setAttribute('src', `img/projects/marock/preview${[i]}.png`);
+        });
+      });
     });
   });
 }, 1);
+
 // form validation
 const form = document.querySelector('.form');
 const formEmail = document.querySelector('.input2');
