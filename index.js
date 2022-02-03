@@ -7,7 +7,7 @@ mobileMenu.style.right = '-800px';
 mobileMenu.style.transition = 'right 800ms';
 
 // listen for a click on the menu button and X button
-menuButton.addEventListener('click', (e) => {
+menuButton.addEventListener('click', () => {
   mobileMenu.style.display = 'block';
   setTimeout(() => {
     mobileMenu.style.right = '0px';
@@ -56,7 +56,7 @@ const projectPop = [
 const projectSection = document.querySelector('.projects_container');
 
 document.addEventListener('DOMContentLoaded', () => {
-  for (let i = 0; i < projectPop.length; i++) {
+  for (let i = 0; i < projectPop.length; i += 1) {
     const project = document.createElement('article');
     const projectImg = document.createElement('img');
     const projectBody = document.createElement('div');
