@@ -93,9 +93,6 @@ body {
 
 #headline_section {
   margin-top: 104px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 .header_content {
@@ -835,7 +832,6 @@ body {
     margin-top: 209px;
     display: flex;
     justify-content: flex-start;
-    /* align-items: center; */
     flex-direction: column;
   }
 
@@ -880,6 +876,7 @@ body {
   .popup_mini_img {
     height: 200px;
   }
+
   /* About section */
 
   #about_section {
