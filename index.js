@@ -185,8 +185,10 @@ setTimeout(() => {
       // change mini image
       const popMiniImg = document.querySelectorAll('.popup_mini_img');
       popMiniImg.forEach((img, i) => {
-        img.style.border = 'none';
         img.addEventListener('click', () => {
+          for (let x = 0; x < popMiniImg.length; x++) {
+            popMiniImg[x].style.border = '1px solid transparent';
+          }
           img.style.border = '1px solid #000';
           image.setAttribute('src', `img/projects/marock/preview${[i]}.png`);
         });
