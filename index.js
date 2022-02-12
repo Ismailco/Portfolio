@@ -61,8 +61,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'JSON',
     technologiesThree: 'JavaScript',
-    linkToLiveVersion: 'https://ismailco.github.io/First-capstone-project_Conference-page/',
-    linkToSource: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
+    linkToLiveVersion: 'https://chrome.google.com/webstore/detail/todo/cbodikmkpephblbhpdcbdjhcmkjocpai',
+    linkToSource: 'https://github.com/Ismailco/Todo-Chrome-Extension',
   },
 ];
 
@@ -204,7 +204,8 @@ setTimeout(() => {
             popMiniImg[x].style.border = '1px solid transparent';
           }
           img.style.border = '1px solid #000';
-          image.setAttribute('src', `img/projects/marock/preview${[i]}.png`);
+          image.setAttribute('src', img.src);
+          console.log(img.src);
         });
       });
     });
