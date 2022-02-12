@@ -64,6 +64,20 @@ const projectPop = [
     linkToLiveVersion: 'https://chrome.google.com/webstore/detail/todo/cbodikmkpephblbhpdcbdjhcmkjocpai',
     linkToSource: 'https://github.com/Ismailco/Todo-Chrome-Extension',
   },
+  {
+    name: 'Marock music festival',
+    description: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
+    featuredImage: 'img/projects/marock/preview0.png',
+    miniImg1: 'img/projects/marock/preview0.png',
+    miniImg2: 'img/projects/marock/preview1.png',
+    miniImg3: 'img/projects/marock/preview2.png',
+    miniImg4: 'img/projects/marock/preview3.png',
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'Flexbox',
+    technologiesThree: 'JavaScript',
+    linkToLiveVersion: 'https://ismailco.github.io/First-capstone-project_Conference-page/',
+    linkToSource: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
+  },
 ];
 
 // Create the project section
@@ -127,6 +141,7 @@ const buttonContainer = document.createElement('div');
 const liveDemo = document.createElement('button');
 const sourceCode = document.createElement('button');
 
+imageContainer.classList.add('image_container_all');
 // Listen for a click on the projects links or close button
 closeBtn.addEventListener('click', () => {
   projectPopup.style.display = 'none';

@@ -1035,3 +1035,7 @@ body {
     margin-left: 210px;
   }
 }
+
+.image_container_all {
+  min-height: 700px;
+}
