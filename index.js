@@ -205,7 +205,6 @@ setTimeout(() => {
           }
           img.style.border = '1px solid #000';
           image.setAttribute('src', img.src);
-          console.log(img.src);
         });
       });
     });
