@@ -817,7 +817,7 @@ body {
   /* Project section */
 
   #projects_section {
-    margin-top: 209px;
+    margin-top: 150px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -830,6 +830,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    margin-left: 100px;
   }
 
   .project_headline_img {
@@ -849,12 +850,13 @@ body {
 
   .project {
     margin: 5px;
+    margin-right: 50px;
     padding: 0;
     width: 340px;
   }
 
   .project:nth-child(1) {
-    margin-left: 440px;
+    margin-left: 400px;
   }
 
   .project img {

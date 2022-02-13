@@ -92,6 +92,20 @@ const projectPop = [
     linkToLiveVersion: 'https://ismailco.github.io/google-homepage/',
     linkToSource: 'https://github.com/Ismailco/google-homepage',
   },
+  {
+    name: 'Etch a Sketch',
+    description: 'Etch a Sketch is an implementation of the mechanical drawing toy, using HTML/CSS and JavaScript',
+    featuredImage: 'img/projects/etchAsketch/preview0.png',
+    miniImg1: 'img/projects/etchAsketch/preview0.png',
+    miniImg2: 'img/projects/etchAsketch/preview0.png',
+    miniImg3: 'img/projects/etchAsketch/preview0.png',
+    miniImg4: 'img/projects/etchAsketch/preview0.png',
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'Flexbox',
+    technologiesThree: 'JavaScript',
+    linkToLiveVersion: 'https://ismailco.github.io/Etch-a-Sketch/',
+    linkToSource: 'https://github.com/Ismailco/Etch-a-Sketch',
+  },
 ];
 
 // Create the project section
