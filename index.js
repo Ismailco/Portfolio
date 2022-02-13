@@ -78,6 +78,20 @@ const projectPop = [
     linkToLiveVersion: 'https://ismailco.github.io/Awesome-books_JavaScript-objects/',
     linkToSource: 'https://github.com/Ismailco/Awesome-books_JavaScript-objects',
   },
+  {
+    name: 'Google Clone',
+    description: 'This is a clone of the Google home page created using HTML and CSS',
+    featuredImage: 'img/projects/googleClone/preview0.png',
+    miniImg1: 'img/projects/googleClone/preview0.png',
+    miniImg2: 'img/projects/googleClone/preview1.png',
+    miniImg3: 'img/projects/googleClone/preview0.png',
+    miniImg4: 'img/projects/googleClone/preview0.png',
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'Flexbox',
+    technologiesThree: '',
+    linkToLiveVersion: 'https://ismailco.github.io/google-homepage/',
+    linkToSource: 'https://github.com/Ismailco/google-homepage',
+  },
 ];
 
 // Create the project section
