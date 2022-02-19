@@ -224,7 +224,7 @@ body {
   font-weight: 700;
   line-height: 16px;
   color: #1a2236;
-  margin-top: 390px;
+  margin-top: 90px;
   margin-left: 20px;
   text-align: left;
   width: 85%;
@@ -313,6 +313,7 @@ body {
   width: 100%;
   margin: auto;
   overflow: hidden;
+  /* height: 100px; */
 }
 
 .slider {
@@ -341,6 +342,14 @@ body {
 
 .popup_mini_img:hover {
   border: 1px solid #252c40;
+}
+
+.image_container_all {
+  height: 700px;
+}
+
+.popup_img {
+  height: 300px;
 }
 
 /* popup */
@@ -863,6 +872,10 @@ body {
     height: 200px;
   }
 
+  .popup_name {
+    margin-top: 250px;
+  }
+
   .popup_mini_img {
     height: 200px;
   }
@@ -1036,8 +1049,12 @@ body {
   .popup_btn:nth-child(1) {
     margin-left: 210px;
   }
-}
 
-.image_container_all {
-  min-height: 700px;
+  .image_container_all {
+    height: 9000px;
+  }
+
+  .popup_img {
+    height: 600px;
+  }
 }
