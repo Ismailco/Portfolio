@@ -41,6 +41,7 @@ const projectPop = [
     description: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
     featuredImage: 'img/projects/marock/preview0.png',
     miniImg: ['img/projects/marock/preview0.png', 'img/projects/marock/preview1.png', 'img/projects/marock/preview2.png', 'img/projects/marock/preview3.png'],
+
     // miniImg1: 'img/projects/marock/preview0.png',
     // miniImg2: 'img/projects/marock/preview1.png',
     // miniImg3: 'img/projects/marock/preview2.png',
@@ -55,10 +56,12 @@ const projectPop = [
     name: 'ToDo',
     description: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
     featuredImage: 'img/projects/todo/preview0.png',
-    miniImg1: 'img/projects/todo/preview0.png',
-    miniImg2: 'img/projects/todo/preview1.png',
-    miniImg3: 'img/projects/todo/preview2.png',
-    miniImg4: 'img/projects/todo/preview3.png',
+    miniImg: ['img/projects/todo/preview0.png', 'img/projects/todo/preview1.png', 'img/projects/todo/preview2.png', 'img/projects/todo/preview3.png'],
+
+    // miniImg1: 'img/projects/todo/preview0.png',
+    // miniImg2: 'img/projects/todo/preview1.png',
+    // miniImg3: 'img/projects/todo/preview2.png',
+    // miniImg4: 'img/projects/todo/preview3.png',
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'JSON',
     technologiesThree: 'JavaScript',
@@ -69,10 +72,11 @@ const projectPop = [
     name: 'Awesome-books',
     description: "This project was built with a Mobile-first design perspective and it's mobile responsive. In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.",
     featuredImage: 'img/projects/bookList/preview0.png',
-    miniImg1: 'img/projects/bookList/preview0.png',
-    miniImg2: 'img/projects/bookList/preview1.png',
-    miniImg3: 'img/projects/bookList/preview2.png',
-    miniImg4: 'img/projects/bookList/preview3.png',
+    miniImg: ['img/projects/bookList/preview0.png', 'img/projects/bookList/preview1.png', 'img/projects/bookList/preview2.png', 'img/projects/bookList/preview3.png'],
+    // miniImg1: 'img/projects/bookList/preview0.png',
+    // miniImg2: 'img/projects/bookList/preview1.png',
+    // miniImg3: 'img/projects/bookList/preview2.png',
+    // miniImg4: 'img/projects/bookList/preview3.png',
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Flexbox',
     technologiesThree: 'JavaScript',
@@ -83,10 +87,12 @@ const projectPop = [
     name: 'Google Clone',
     description: 'This is a clone of the Google home page created using HTML and CSS',
     featuredImage: 'img/projects/googleClone/preview0.png',
-    miniImg1: 'img/projects/googleClone/preview0.png',
-    miniImg2: 'img/projects/googleClone/preview1.png',
-    miniImg3: 'img/projects/googleClone/preview0.png',
-    miniImg4: 'img/projects/googleClone/preview0.png',
+    miniImg: ['img/projects/googleClone/preview0.png', 'img/projects/googleClone/preview1.png', 'img/projects/googleClone/preview0.png', 'img/projects/googleClone/preview0.png'],
+
+    // miniImg1: 'img/projects/googleClone/preview0.png',
+    // miniImg2: 'img/projects/googleClone/preview1.png',
+    // miniImg3: 'img/projects/googleClone/preview0.png',
+    // miniImg4: 'img/projects/googleClone/preview0.png',
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Flexbox',
     technologiesThree: '',
@@ -97,10 +103,12 @@ const projectPop = [
     name: 'Etch a Sketch',
     description: 'Etch a Sketch is an implementation of the mechanical drawing toy, using HTML/CSS and JavaScript',
     featuredImage: 'img/projects/etchAsketch/preview0.png',
-    miniImg1: 'img/projects/etchAsketch/preview0.png',
-    miniImg2: 'img/projects/etchAsketch/preview0.png',
-    miniImg3: 'img/projects/etchAsketch/preview0.png',
-    miniImg4: 'img/projects/etchAsketch/preview0.png',
+    miniImg: ['img/projects/etchAsketch/preview0.png', 'img/projects/etchAsketch/preview0.png', 'img/projects/etchAsketch/preview0.png', 'img/projects/etchAsketch/preview0.png'],
+
+    // miniImg1: 'img/projects/etchAsketch/preview0.png',
+    // miniImg2: 'img/projects/etchAsketch/preview0.png',
+    // miniImg3: 'img/projects/etchAsketch/preview0.png',
+    // miniImg4: 'img/projects/etchAsketch/preview0.png',
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Flexbox',
     technologiesThree: 'JavaScript',
@@ -161,6 +169,7 @@ const slider = document.createElement('div');
 const image = document.createElement('img');
 
 const miniImageCountainer = document.createElement('div');
+
 // const miniImageOne = document.createElement('img');
 // const miniImageTwo = document.createElement('img');
 // const miniImageThree = document.createElement('img');
@@ -214,6 +223,7 @@ setTimeout(() => {
         miniImage.classList.add('popup_mini_img');
         miniImageCountainer.append(miniImage);
       });
+
       // miniImageOne.setAttribute('src', projectPop[index].miniImg1);
       // miniImageOne.classList.add('popup_mini_img');
       // miniImageTwo.setAttribute('src', projectPop[index].miniImg2);
