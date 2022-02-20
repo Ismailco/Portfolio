@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.mobile_menu_btn');
 const mobileMenu = document.querySelector('.mobile_menu');
 const remButton = document.querySelector('.fa-times');
+const htmlBody = document.querySelector('body');
 
 // transition styles
 mobileMenu.style.right = '-800px';
@@ -182,6 +183,7 @@ const sourceCode = document.createElement('button');
 imageContainer.classList.add('image_container_all');
 // Listen for a click on the projects links or close button
 closeBtn.addEventListener('click', () => {
+  htmlBody.style.overflow = 'scroll';
   projectPopup.style.display = 'none';
   closeBtn.style.display = 'none';
   projectPopup.innerHTML = '';
@@ -190,6 +192,7 @@ closeBtn.addEventListener('click', () => {
 setTimeout(() => {
   document.querySelectorAll('.project_btn').forEach((btn, index) => {
     btn.addEventListener('click', () => {
+      htmlBody.style.overflow = 'hidden';
       projectPopup.style.display = 'flex';
       closeBtn.style.display = 'block';
 
