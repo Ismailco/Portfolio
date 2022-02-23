@@ -49,7 +49,7 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
   },
   {
-    name: 'ToDo',
+    name: 'ToDo chrome extension',
     description: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
     featuredImage: 'img/projects/todo/preview0.png',
     miniImg: ['img/projects/todo/preview0.png', 'img/projects/todo/preview1.png', 'img/projects/todo/preview2.png', 'img/projects/todo/preview3.png'],
