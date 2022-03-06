@@ -487,6 +487,9 @@ body {
 /* About section */
 
 #about_section {
+}
+
+.about_section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -941,6 +944,9 @@ body {
   /* About section */
 
   #about_section {
+  }
+
+  .about_section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
