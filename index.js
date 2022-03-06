@@ -280,7 +280,7 @@ formEmail.addEventListener('input', () => {
   }
 });
 
-// local storage
+// local storage for form
 form.addEventListener('input', () => {
   const formInfo = {
     name: document.querySelector('.input1').value,
