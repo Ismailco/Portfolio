@@ -491,25 +491,29 @@ body {
   flex-direction: column;
 }
 
+.widget-headline {
+  margin: 10px 30px;
+}
+
 codersrank-activity {
   align-self: center;
   margin-top: 50px;
   width: 73vw;
 }
-
+/* 
 codersrank-work-experience {
   margin: 10px;
-  --item-bg-color: #cc47d831;
+  --item-bg-color: rgba(240, 240, 72, 0.301);
   --item-border-radius: 10px;
   --item-padding: 20px;
 }
 
 codersrank-education {
   margin: 10px;
-  --item-bg-color: #cc47d831;
+  --item-bg-color: rgba(240, 240, 72, 0.301);
   --item-border-radius: 10px;
   --item-padding: 20px;
-}
+} */
 
 .about_section {
   display: flex;
