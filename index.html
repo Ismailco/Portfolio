@@ -21,6 +21,16 @@
     <link rel="shortcut icon" href="img/Icons/fav.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
+    <!-- import activity widget from coderrank -->
+    <script src="https://unpkg.com/@codersrank/activity@x.x.x/codersrank-activity.min.js" defer></script>
+
+    <!-- import experience widget from coderrank -->
+    <script src="https://unpkg.com/@codersrank/work-experience@x.x.x/codersrank-work-experience.min.js"></script>
+
+    <!-- import education widget from coderrank -->
+    <script src="https://unpkg.com/@codersrank/education@x.x.x/codersrank-education.min.js"></script>
+    <script src="index.js" defer></script>
+
     <title>Portfolio Full Stack Developer Ismail Courr</title>
   </head>
   <body>
@@ -143,6 +153,9 @@
           <li class="desktop_about_img"></li>
         </ul>
       </article>
+      <codersrank-activity username="ismailco" svg-width="700" branding="false" step="4"></codersrank-activity>
+      <codersrank-education username="ismailco" svg-width="700" branding="false" certificates="false"></codersrank-education>
+      <codersrank-work-experience username="ismailco" svg-width="700" branding="false"></codersrank-work-experience>
     </section>
 
     <!-- Contact section -->
@@ -172,6 +185,5 @@
         <a class="footer_icon" href="https://angel.co/u/ismail-courr" target="_blank"><i class="fab fa-angellist"></i></a>
       </div>
     </footer>
-    <script src="index.js"></script>
   </body>
 </html>
