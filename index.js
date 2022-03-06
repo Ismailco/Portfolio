@@ -82,6 +82,17 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/Todo-list-with-webpack',
   },
   {
+    name: 'Leaderboard',
+    description: 'In this project, I set up a basic JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. The project uses the Leaderboard API.',
+    featuredImage: 'img/projects/leaderboard/screenshot1.png',
+    miniImg: ['img/projects/leaderboard/screenshot1.png', 'img/projects/leaderboard/screenshot2.png', 'img/projects/leaderboard/screenshot3.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'JavaScript',
+    technologiesThree: 'API',
+    linkToLiveVersion: 'https://ismailco.github.io/Leaderboard/dist/',
+    linkToSource: 'https://github.com/Ismailco/Leaderboard',
+  },
+  {
     name: 'Google Clone',
     description: 'This is a clone of the Google home page created using HTML and CSS',
     featuredImage: 'img/projects/googleClone/preview1.png',
@@ -280,7 +291,7 @@ formEmail.addEventListener('input', () => {
   }
 });
 
-// local storage
+// local storage for form
 form.addEventListener('input', () => {
   const formInfo = {
     name: document.querySelector('.input1').value,
