@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.mobile_menu_btn');
 const mobileMenu = document.querySelector('.mobile_menu');
 const remButton = document.querySelector('.fa-times');
+const htmlBody = document.querySelector('body');
 
 // transition styles
 mobileMenu.style.right = '-800px';
@@ -40,15 +41,67 @@ const projectPop = [
     name: 'Marock music festival',
     description: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
     featuredImage: 'img/projects/marock/preview0.png',
-    miniImg1: 'img/projects/marock/preview0.png',
-    miniImg2: 'img/projects/marock/preview1.png',
-    miniImg3: 'img/projects/marock/preview2.png',
-    miniImg4: 'img/projects/marock/preview3.png',
+    miniImg: ['img/projects/marock/preview0.png', 'img/projects/marock/preview1.png', 'img/projects/marock/preview2.png', 'img/projects/marock/preview3.png'],
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'Flexbox',
     technologiesThree: 'JavaScript',
     linkToLiveVersion: 'https://ismailco.github.io/First-capstone-project_Conference-page/',
     linkToSource: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
+  },
+  {
+    name: 'ToDo chrome extension',
+    description: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
+    featuredImage: 'img/projects/todo/preview0.png',
+    miniImg: ['img/projects/todo/preview0.png', 'img/projects/todo/preview1.png', 'img/projects/todo/preview2.png', 'img/projects/todo/preview3.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'JSON',
+    technologiesThree: 'JavaScript',
+    linkToLiveVersion: 'https://chrome.google.com/webstore/detail/todo/cbodikmkpephblbhpdcbdjhcmkjocpai',
+    linkToSource: 'https://github.com/Ismailco/Todo-Chrome-Extension',
+  },
+  {
+    name: 'Awesome-books',
+    description: "This project was built with a Mobile-first design perspective and it's mobile responsive. In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.",
+    featuredImage: 'img/projects/bookList/preview0.png',
+    miniImg: ['img/projects/bookList/preview0.png', 'img/projects/bookList/preview1.png', 'img/projects/bookList/preview2.png', 'img/projects/bookList/preview3.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'Flexbox',
+    technologiesThree: 'JavaScript',
+    linkToLiveVersion: 'https://ismailco.github.io/Awesome-books_JavaScript-objects/',
+    linkToSource: 'https://github.com/Ismailco/Awesome-books_JavaScript-objects',
+  },
+  {
+    name: 'To Do List with Webpack',
+    description: 'In this project, I build a basic website that allows users to add/remove taskes from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events. The project built using Webpack.',
+    featuredImage: 'img/projects/todoWebpack/screenshot1.png',
+    miniImg: ['img/projects/todoWebpack/screenshot1.png', 'img/projects/todoWebpack/screenshot.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'JavaScript',
+    technologiesThree: 'WebPack',
+    linkToLiveVersion: 'https://ismailco.github.io/Todo-list-with-webpack/dist/',
+    linkToSource: 'https://github.com/Ismailco/Todo-list-with-webpack',
+  },
+  {
+    name: 'Google Clone',
+    description: 'This is a clone of the Google home page created using HTML and CSS',
+    featuredImage: 'img/projects/googleClone/preview1.png',
+    miniImg: ['img/projects/googleClone/preview0.png', 'img/projects/googleClone/preview1.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'Flexbox',
+    technologiesThree: '',
+    linkToLiveVersion: 'https://ismailco.github.io/google-homepage/',
+    linkToSource: 'https://github.com/Ismailco/google-homepage',
+  },
+  {
+    name: 'Etch a Sketch',
+    description: 'Etch a Sketch is an implementation of the mechanical drawing toy, using HTML/CSS and JavaScript',
+    featuredImage: 'img/projects/etchAsketch/preview0.png',
+    miniImg: ['img/projects/etchAsketch/preview0.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'Flexbox',
+    technologiesThree: 'JavaScript',
+    linkToLiveVersion: 'https://ismailco.github.io/Etch-a-Sketch/',
+    linkToSource: 'https://github.com/Ismailco/Etch-a-Sketch',
   },
 ];
 
@@ -104,17 +157,20 @@ const slider = document.createElement('div');
 const image = document.createElement('img');
 
 const miniImageCountainer = document.createElement('div');
-const miniImageOne = document.createElement('img');
-const miniImageTwo = document.createElement('img');
-const miniImageThree = document.createElement('img');
-const miniImageFoor = document.createElement('img');
+
+// const miniImageOne = document.createElement('img');
+// const miniImageTwo = document.createElement('img');
+// const miniImageThree = document.createElement('img');
+// const miniImageFoor = document.createElement('img');
 const description = document.createElement('p');
 const buttonContainer = document.createElement('div');
 const liveDemo = document.createElement('button');
 const sourceCode = document.createElement('button');
 
+imageContainer.classList.add('image_container_all');
 // Listen for a click on the projects links or close button
 closeBtn.addEventListener('click', () => {
+  htmlBody.style.overflow = 'scroll';
   projectPopup.style.display = 'none';
   closeBtn.style.display = 'none';
   projectPopup.innerHTML = '';
@@ -123,6 +179,7 @@ closeBtn.addEventListener('click', () => {
 setTimeout(() => {
   document.querySelectorAll('.project_btn').forEach((btn, index) => {
     btn.addEventListener('click', () => {
+      htmlBody.style.overflow = 'hidden';
       projectPopup.style.display = 'flex';
       closeBtn.style.display = 'block';
 
@@ -150,16 +207,23 @@ setTimeout(() => {
 
       sliderCountainer.classList.add('slider_container');
 
-      miniImageOne.setAttribute('src', projectPop[index].miniImg1);
-      miniImageOne.classList.add('popup_mini_img');
-      miniImageTwo.setAttribute('src', projectPop[index].miniImg2);
-      miniImageTwo.classList.add('popup_mini_img');
-      miniImageThree.setAttribute('src', projectPop[index].miniImg3);
-      miniImageThree.classList.add('popup_mini_img');
-      miniImageFoor.setAttribute('src', projectPop[index].miniImg4);
-      miniImageFoor.classList.add('popup_mini_img');
+      projectPop[index].miniImg.forEach((imgSrc) => {
+        const miniImage = document.createElement('img');
+        miniImage.setAttribute('src', imgSrc);
+        miniImage.classList.add('popup_mini_img');
+        miniImageCountainer.append(miniImage);
+      });
 
-      miniImageCountainer.append(miniImageOne, miniImageTwo, miniImageThree, miniImageFoor);
+      // miniImageOne.setAttribute('src', projectPop[index].miniImg1);
+      // miniImageOne.classList.add('popup_mini_img');
+      // miniImageTwo.setAttribute('src', projectPop[index].miniImg2);
+      // miniImageTwo.classList.add('popup_mini_img');
+      // miniImageThree.setAttribute('src', projectPop[index].miniImg3);
+      // miniImageThree.classList.add('popup_mini_img');
+      // miniImageFoor.setAttribute('src', projectPop[index].miniImg4);
+      // miniImageFoor.classList.add('popup_mini_img');
+
+      // miniImageCountainer.append(miniImageOne, miniImageTwo, miniImageThree, miniImageFoor);
       miniImageCountainer.classList.add('mini_img');
 
       imageContainer.append(sliderCountainer, miniImageCountainer);
@@ -190,7 +254,7 @@ setTimeout(() => {
             popMiniImg[x].style.border = '1px solid transparent';
           }
           img.style.border = '1px solid #000';
-          image.setAttribute('src', `img/projects/marock/preview${[i]}.png`);
+          image.setAttribute('src', img.src);
         });
       });
     });
