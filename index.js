@@ -49,6 +49,17 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
   },
   {
+    name: 'Film Guru',
+    description: "This project was built in colaborations with jhonathan. We had to select an API (OMDb API) that provides data about Movies and then build the webapp around it. The webapp has 2 user interfaces, it's mobile responsive",
+    featuredImage: 'img/projects/moviesGuru/screenshot1.png',
+    miniImg: ['img/projects/moviesGuru/screenshot1.png', 'img/projects/moviesGuru/screenshot2.png', 'img/projects/moviesGuru/screenshot-m-1.png', 'img/projects/moviesGuru/screenshot-m-2.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'JavaScript',
+    technologiesThree: 'API',
+    linkToLiveVersion: 'https://ismailco.github.io/Leaderboard/dist/',
+    linkToSource: 'https://github.com/Ismailco/Leaderboard',
+  },
+  {
     name: 'ToDo chrome extension',
     description: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
     featuredImage: 'img/projects/todo/preview0.png',
