@@ -39,7 +39,7 @@ document.querySelectorAll('.menu_link').forEach((link) => {
 const projectPop = [
   {
     name: 'Marock music festival',
-    description: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
+    desc: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
     featuredImage: 'img/projects/marock/preview0.png',
     miniImg: ['img/projects/marock/preview0.png', 'img/projects/marock/preview1.png', 'img/projects/marock/preview2.png', 'img/projects/marock/preview3.png'],
     technologiesOne: 'HTML/CSS',
@@ -50,7 +50,7 @@ const projectPop = [
   },
   {
     name: 'Film Guru',
-    description: "This project was built in colaborations with jhonathan. We had to select an API (OMDb API) that provides data about Movies and then build the webapp around it. The webapp has 2 user interfaces, it's mobile responsive",
+    desc: "This project was built in colaborations with jhonathan. We had to select an API (OMDb API) that provides data about Movies and then build the webapp around it. The webapp has 2 user interfaces, it's mobile responsive",
     featuredImage: 'img/projects/moviesGuru/screenshot1.png',
     miniImg: ['img/projects/moviesGuru/screenshot1.png', 'img/projects/moviesGuru/screenshot2.png', 'img/projects/moviesGuru/screenshot-m-1.png', 'img/projects/moviesGuru/screenshot-m-2.png'],
     technologiesOne: 'HTML/CSS',
@@ -61,7 +61,7 @@ const projectPop = [
   },
   {
     name: 'ToDo chrome extension',
-    description: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
+    desc: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
     featuredImage: 'img/projects/todo/preview0.png',
     miniImg: ['img/projects/todo/preview0.png', 'img/projects/todo/preview1.png', 'img/projects/todo/preview2.png', 'img/projects/todo/preview3.png'],
     technologiesOne: 'HTML/CSS',
@@ -72,7 +72,7 @@ const projectPop = [
   },
   {
     name: 'Awesome-books',
-    description: "This project was built with a Mobile-first design perspective and it's mobile responsive. In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.",
+    desc: "This project was built with a Mobile-first design perspective and it's mobile responsive. In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.",
     featuredImage: 'img/projects/bookList/preview0.png',
     miniImg: ['img/projects/bookList/preview0.png', 'img/projects/bookList/preview1.png', 'img/projects/bookList/preview2.png', 'img/projects/bookList/preview3.png'],
     technologiesOne: 'HTML/CSS',
@@ -83,7 +83,7 @@ const projectPop = [
   },
   {
     name: 'To Do List with Webpack',
-    description: 'In this project, I build a basic website that allows users to add/remove taskes from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events. The project built using Webpack.',
+    desc: 'In this project, I build a basic website that allows users to add/remove taskes from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events. The project built using Webpack.',
     featuredImage: 'img/projects/todoWebpack/screenshot1.png',
     miniImg: ['img/projects/todoWebpack/screenshot1.png', 'img/projects/todoWebpack/screenshot.png'],
     technologiesOne: 'HTML/CSS',
@@ -94,7 +94,7 @@ const projectPop = [
   },
   {
     name: 'Leaderboard',
-    description: 'In this project, I set up a basic JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. The project uses the Leaderboard API.',
+    desc: 'In this project, I set up a basic JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. The project uses the Leaderboard API.',
     featuredImage: 'img/projects/leaderboard/screenshot1.png',
     miniImg: ['img/projects/leaderboard/screenshot1.png', 'img/projects/leaderboard/screenshot2.png', 'img/projects/leaderboard/screenshot3.png'],
     technologiesOne: 'HTML/CSS',
@@ -105,7 +105,7 @@ const projectPop = [
   },
   {
     name: 'Google Clone',
-    description: 'This is a clone of the Google home page created using HTML and CSS',
+    desc: 'This is a clone of the Google home page created using HTML and CSS',
     featuredImage: 'img/projects/googleClone/preview1.png',
     miniImg: ['img/projects/googleClone/preview0.png', 'img/projects/googleClone/preview1.png'],
     technologiesOne: 'HTML/CSS',
@@ -116,7 +116,7 @@ const projectPop = [
   },
   {
     name: 'Etch a Sketch',
-    description: 'Etch a Sketch is an implementation of the mechanical drawing toy, using HTML/CSS and JavaScript',
+    desc: 'Etch a Sketch is an implementation of the mechanical drawing toy, using HTML/CSS and JavaScript',
     featuredImage: 'img/projects/etchAsketch/preview0.png',
     miniImg: ['img/projects/etchAsketch/preview0.png'],
     technologiesOne: 'HTML/CSS',
@@ -184,7 +184,7 @@ const miniImageCountainer = document.createElement('div');
 // const miniImageTwo = document.createElement('img');
 // const miniImageThree = document.createElement('img');
 // const miniImageFoor = document.createElement('img');
-const description = document.createElement('p');
+const desc = document.createElement('p');
 const buttonContainer = document.createElement('div');
 const liveDemo = document.createElement('button');
 const sourceCode = document.createElement('button');
@@ -251,8 +251,8 @@ setTimeout(() => {
       imageContainer.append(sliderCountainer, miniImageCountainer);
       imageContainer.classList.add('img_slider');
 
-      description.classList.add('popup_text');
-      description.textContent = projectPop[index].description;
+      desc.classList.add('popup_text');
+      desc.textContent = projectPop[index].desc;
 
       liveDemo.classList.add('popup_btn');
       liveDemo.innerHTML = `<a href = "${projectPop[index].linkToLiveVersion}">See live <i class="fas fa-share-square"></i></a>`;
@@ -264,15 +264,15 @@ setTimeout(() => {
       buttonContainer.append(liveDemo, sourceCode);
 
       projectPopup.classList.add('project_pop');
-      projectPopup.append(closeBtn, projectName, list, imageContainer, description, buttonContainer);
+      projectPopup.append(closeBtn, projectName, list, imageContainer, desc, buttonContainer);
 
       document.body.appendChild(projectPopup);
 
       // change mini image
       const popMiniImg = document.querySelectorAll('.popup_mini_img');
-      popMiniImg.forEach((img, i) => {
+      popMiniImg.forEach((img) => {
         img.addEventListener('click', () => {
-          for (let x = 0; x < popMiniImg.length; x++) {
+          for (let x = 0; x < popMiniImg.length; x += 1) {
             popMiniImg[x].style.border = '1px solid transparent';
           }
           img.style.border = '1px solid #000';
