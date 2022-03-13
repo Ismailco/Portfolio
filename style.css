@@ -174,8 +174,8 @@ body {
   color: #fff;
 }
 
-.headline_btn a:hover,
-.headline_btn a:active {
+.headline_email:hover,
+.headline_email:active {
   color: #1a2236;
 }
 
@@ -511,7 +511,7 @@ body {
   margin: 10px 30px;
 }
 
-codersrank-activity {
+.codersrank-activity {
   align-self: center;
   margin-top: 50px;
   width: 73vw;
