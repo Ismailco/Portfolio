@@ -56,8 +56,8 @@ const projectPop = [
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'JavaScript',
     technologiesThree: 'API',
-    linkToLiveVersion: 'https://ismailco.github.io/Leaderboard/dist/',
-    linkToSource: 'https://github.com/Ismailco/Leaderboard',
+    linkToLiveVersion: 'https://movieguru.ml/',
+    linkToSource: 'https://github.com/Ismailco/Movies-Guru',
   },
   {
     name: 'ToDo chrome extension',
