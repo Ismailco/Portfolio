@@ -60,6 +60,17 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/Movies-Guru',
   },
   {
+    name: 'Math magicians',
+    desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
+    featuredImage: 'img/projects/Mathmagicians/screenshot1.png',
+    miniImg: ['img/projects/Mathmagicians/screenshot1.png', 'img/projects/Mathmagicians/screenshot.png'],
+    technologiesOne: 'React',
+    technologiesTwo: 'CSS',
+    technologiesThree: 'JavaScript',
+    linkToLiveVersion: 'https://mv-calculator.herokuapp.com',
+    linkToSource: 'https://github.com/Ismailco/math-magicians',
+  },
+  {
     name: 'ToDo chrome extension',
     desc: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
     featuredImage: 'img/projects/todo/preview0.png',
