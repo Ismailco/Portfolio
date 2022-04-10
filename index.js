@@ -51,8 +51,8 @@ const projectPop = [
   {
     name: 'Film Guru',
     desc: "This project was built in colaborations with jhonathan. We had to select an API (OMDb API) that provides data about Movies and then build the webapp around it. The webapp has 2 user interfaces, it's mobile responsive",
-    featuredImage: 'img/projects/moviesGuru/screenshot1.png',
-    miniImg: ['img/projects/moviesGuru/screenshot1.png', 'img/projects/moviesGuru/screenshot2.png', 'img/projects/moviesGuru/screenshot-m-1.png', 'img/projects/moviesGuru/screenshot-m-2.png'],
+    featuredImage: 'img/projects/moviesGuru/preview0.png',
+    miniImg: ['img/projects/moviesGuru/preview0.png', 'img/projects/moviesGuru/screenshot1.png', 'img/projects/moviesGuru/screenshot2.png', 'img/projects/moviesGuru/screenshot-m-1.png', 'img/projects/moviesGuru/screenshot-m-2.png'],
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'JavaScript',
     technologiesThree: 'API',
@@ -62,8 +62,8 @@ const projectPop = [
   {
     name: 'Math magicians',
     desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
-    featuredImage: 'img/projects/mathMagicians/screenshot1.png',
-    miniImg: ['img/projects/mathMagicians/screenshot1.png', 'img/projects/mathMagicians/screenshot.png'],
+    featuredImage: 'img/projects/mathMagicians/preview0.png',
+    miniImg: ['img/projects/mathMagicians/preview0.png', 'img/projects/mathMagicians/screenshot1.png', 'img/projects/mathMagicians/screenshot.png'],
     technologiesOne: 'React',
     technologiesTwo: 'CSS',
     technologiesThree: 'JavaScript',
@@ -95,8 +95,8 @@ const projectPop = [
   {
     name: 'To Do List with Webpack',
     desc: 'In this project, I build a basic website that allows users to add/remove taskes from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events. The project built using Webpack.',
-    featuredImage: 'img/projects/todoWebpack/screenshot1.png',
-    miniImg: ['img/projects/todoWebpack/screenshot1.png', 'img/projects/todoWebpack/screenshot.png'],
+    featuredImage: 'img/projects/todoWebpack/preview0.png',
+    miniImg: ['img/projects/todoWebpack/preview0.png', 'img/projects/todoWebpack/screenshot1.png', 'img/projects/todoWebpack/screenshot.png'],
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'JavaScript',
     technologiesThree: 'WebPack',
@@ -106,7 +106,7 @@ const projectPop = [
   {
     name: 'Leaderboard',
     desc: 'In this project, I set up a basic JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. The project uses the Leaderboard API.',
-    featuredImage: 'img/projects/leaderboard/screenshot1.png',
+    featuredImage: 'img/projects/leaderboard/preview0.png',
     miniImg: ['img/projects/leaderboard/screenshot1.png', 'img/projects/leaderboard/screenshot2.png', 'img/projects/leaderboard/screenshot3.png'],
     technologiesOne: 'HTML/CSS',
     technologiesTwo: 'JavaScript',
