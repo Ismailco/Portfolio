@@ -93,6 +93,17 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/Todo-Chrome-Extension',
   },
   {
+    name: 'Space travel Hub',
+    desc: 'his is a dummy website for company that provides commercial and scientific space travel sercises. This application will allow users to book rockets and join selected space missions.',
+    featuredImage: 'img/projects/spaceTravel/screenshot0.png',
+    miniImg: ['img/projects/spaceTravel/screenshot.png', 'img/projects/spaceTravel/screenshot1.png', 'img/projects/spaceTravel/screenshot2.png', 'img/projects/spaceTravel/screenshot3.png'],
+    technologiesOne: 'HTML/CSS',
+    technologiesTwo: 'React',
+    technologiesThree: 'JavaScript',
+    linkToLiveVersion: 'https://space-traveller.herokuapp.com/',
+    linkToSource: 'https://github.com/Ismailco/space-travel',
+  },
+  {
     name: 'Awesome-books',
     desc: "This project was built with a Mobile-first design perspective and it's mobile responsive. In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.",
     featuredImage: 'img/projects/bookList/preview0.png',
