@@ -60,6 +60,17 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/Movies-Guru',
   },
   {
+    name: 'Weather App',
+    desc: 'A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.',
+    featuredImage: 'img/projects/weatherApp/screenshot0.png',
+    miniImg: ['img/projects/weatherApp/screenshot.png', 'img/projects/weatherApp/screenshot1.png', 'img/projects/weatherApp/screenshot2.png', 'img/projects/weatherApp/screenshot3.png'],
+    technologiesOne: 'CSS',
+    technologiesTwo: 'JavaScript',
+    technologiesThree: 'React',
+    linkToLiveVersion: 'https://mv-react-weather-app.herokuapp.com/',
+    linkToSource: 'https://github.com/Ismailco/weather-app',
+  },
+  {
     name: 'Math magicians',
     desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
     featuredImage: 'img/projects/mathMagicians/preview0.png',
