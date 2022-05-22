@@ -42,9 +42,7 @@ const projectPop = [
     desc: "This project was built with a Mobile-first design perspective and it's mobile responsive. for the design, the main technologies in CSS are flexbox and media query. The Festival was inspired by the Boulevard urban music festival in Morocco.",
     featuredImage: 'img/projects/marock/preview0.png',
     miniImg: ['img/projects/marock/preview0.png', 'img/projects/marock/preview1.png', 'img/projects/marock/preview2.png', 'img/projects/marock/preview3.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'Flexbox',
-    technologiesThree: 'JavaScript',
+    technologies: ['HTML/CSS', 'Flexbox', 'JavaScript'],
     linkToLiveVersion: 'https://ismailco.github.io/First-capstone-project_Conference-page/',
     linkToSource: 'https://github.com/Ismailco/First-capstone-project_Conference-page',
   },
@@ -53,9 +51,7 @@ const projectPop = [
     desc: "This project was built in colaborations with jhonathan. We had to select an API (OMDb API) that provides data about Movies and then build the webapp around it. The webapp has 2 user interfaces, it's mobile responsive",
     featuredImage: 'img/projects/moviesGuru/preview0.png',
     miniImg: ['img/projects/moviesGuru/preview0.png', 'img/projects/moviesGuru/screenshot1.png', 'img/projects/moviesGuru/screenshot2.png', 'img/projects/moviesGuru/screenshot-m-1.png', 'img/projects/moviesGuru/screenshot-m-2.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'JavaScript',
-    technologiesThree: 'API',
+    technologies: ['HTML/CSS', 'JavaScript', 'API', 'Flexbox'],
     linkToLiveVersion: 'https://movieguru.ml/',
     linkToSource: 'https://github.com/Ismailco/Movies-Guru',
   },
@@ -64,9 +60,7 @@ const projectPop = [
     desc: 'A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.',
     featuredImage: 'img/projects/weatherApp/screenshot0.png',
     miniImg: ['img/projects/weatherApp/screenshot.png', 'img/projects/weatherApp/screenshot1.png', 'img/projects/weatherApp/screenshot2.png', 'img/projects/weatherApp/screenshot3.png'],
-    technologiesOne: 'CSS',
-    technologiesTwo: 'JavaScript',
-    technologiesThree: 'React',
+    technologies: ['HTML/CSS', 'React', 'JavaScript', 'Flexbox'],
     linkToLiveVersion: 'https://mv-react-weather-app.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/weather-app',
   },
@@ -75,9 +69,7 @@ const projectPop = [
     desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
     featuredImage: 'img/projects/mathMagicians/preview0.png',
     miniImg: ['img/projects/mathMagicians/preview0.png', 'img/projects/mathMagicians/screenshot1.png', 'img/projects/mathMagicians/screenshot.png'],
-    technologiesOne: 'React',
-    technologiesTwo: 'CSS',
-    technologiesThree: 'JavaScript',
+    technologies: ['HTML/CSS', 'React', 'Javascript'],
     linkToLiveVersion: 'https://mv-calculator.herokuapp.com',
     linkToSource: 'https://github.com/Ismailco/math-magicians',
   },
@@ -86,9 +78,7 @@ const projectPop = [
     desc: 'This is a to-do list chrome extension built using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to build the functionalities of the extension. this extension uses local storage to store the data.',
     featuredImage: 'img/projects/todo/preview0.png',
     miniImg: ['img/projects/todo/preview0.png', 'img/projects/todo/preview1.png', 'img/projects/todo/preview2.png', 'img/projects/todo/preview3.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'JSON',
-    technologiesThree: 'JavaScript',
+    technologies: ['HTML/CSS', 'JavaScript', 'Json'],
     linkToLiveVersion: 'https://chrome.google.com/webstore/detail/todo/cbodikmkpephblbhpdcbdjhcmkjocpai',
     linkToSource: 'https://github.com/Ismailco/Todo-Chrome-Extension',
   },
@@ -97,9 +87,7 @@ const projectPop = [
     desc: 'his is a dummy website for company that provides commercial and scientific space travel sercises. This application will allow users to book rockets and join selected space missions.',
     featuredImage: 'img/projects/spaceTravel/screenshot0.png',
     miniImg: ['img/projects/spaceTravel/screenshot.png', 'img/projects/spaceTravel/screenshot1.png', 'img/projects/spaceTravel/screenshot2.png', 'img/projects/spaceTravel/screenshot3.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'React',
-    technologiesThree: 'JavaScript',
+    technologies: ['HTML/CSS', 'JavaScript', 'Flexbox', 'React'],
     linkToLiveVersion: 'https://space-traveller.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/space-travel',
   },
@@ -108,9 +96,7 @@ const projectPop = [
     desc: "This project was built with a Mobile-first design perspective and it's mobile responsive. In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.",
     featuredImage: 'img/projects/bookList/preview0.png',
     miniImg: ['img/projects/bookList/preview0.png', 'img/projects/bookList/preview1.png', 'img/projects/bookList/preview2.png', 'img/projects/bookList/preview3.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'Flexbox',
-    technologiesThree: 'JavaScript',
+    technologies: ['HTML/CSS', 'Javascript', 'Flexbox'],
     linkToLiveVersion: 'https://ismailco.github.io/Awesome-books_JavaScript-objects/',
     linkToSource: 'https://github.com/Ismailco/Awesome-books_JavaScript-objects',
   },
@@ -119,9 +105,7 @@ const projectPop = [
     desc: 'In this project, I build a basic website that allows users to add/remove taskes from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events. The project built using Webpack.',
     featuredImage: 'img/projects/todoWebpack/preview0.png',
     miniImg: ['img/projects/todoWebpack/preview0.png', 'img/projects/todoWebpack/screenshot1.png', 'img/projects/todoWebpack/screenshot.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'JavaScript',
-    technologiesThree: 'WebPack',
+    technologies: ['HTML/CSS', 'JavaScript', 'Flexbox', 'WebPack'],
     linkToLiveVersion: 'https://ismailco.github.io/Todo-list-with-webpack/dist/',
     linkToSource: 'https://github.com/Ismailco/Todo-list-with-webpack',
   },
@@ -130,9 +114,7 @@ const projectPop = [
     desc: 'In this project, I set up a basic JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. The project uses the Leaderboard API.',
     featuredImage: 'img/projects/leaderboard/preview0.png',
     miniImg: ['img/projects/leaderboard/screenshot1.png', 'img/projects/leaderboard/screenshot2.png', 'img/projects/leaderboard/screenshot3.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'JavaScript',
-    technologiesThree: 'API',
+    technologies: ['HTML/CSS', 'JavaScript', 'API', 'Flexbox'],
     linkToLiveVersion: 'https://ismailco.github.io/Leaderboard/dist/',
     linkToSource: 'https://github.com/Ismailco/Leaderboard',
   },
@@ -141,9 +123,7 @@ const projectPop = [
     desc: 'This is a clone of the Google home page created using HTML and CSS',
     featuredImage: 'img/projects/googleClone/preview1.png',
     miniImg: ['img/projects/googleClone/preview0.png', 'img/projects/googleClone/preview1.png'],
-    technologiesOne: 'HTML/CSS',
-    technologiesTwo: 'Flexbox',
-    technologiesThree: '',
+    technologies: ['HTML/CSS', 'Flexbox'],
     linkToLiveVersion: 'https://ismailco.github.io/google-homepage/',
     linkToSource: 'https://github.com/Ismailco/google-homepage',
   },
@@ -159,9 +139,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectBody = document.createElement('div');
     const projectHeading = document.createElement('h3');
     const projectList = document.createElement('ul');
-    const projectListItemOne = document.createElement('li');
-    const projectListItemTwo = document.createElement('li');
-    const projectListItemThree = document.createElement('li');
+    // const projectListItemOne = document.createElement('li');
+    // const projectListItemTwo = document.createElement('li');
+    // const projectListItemThree = document.createElement('li');
     const projectBtn = document.createElement('button');
     projectBtn.classList.add('project_btn');
     projectBtn.textContent = 'See this Project';
@@ -173,14 +153,23 @@ document.addEventListener('DOMContentLoaded', () => {
     projectHeading.classList.add('project_name');
     projectHeading.textContent = projectPop[i].name;
     projectList.classList.add('project_languages');
-    projectListItemOne.classList.add('project_language');
-    projectListItemOne.textContent = projectPop[i].technologiesOne;
-    projectListItemTwo.classList.add('project_language');
-    projectListItemTwo.textContent = projectPop[i].technologiesTwo;
-    projectListItemThree.classList.add('project_language');
-    projectListItemThree.textContent = projectPop[i].technologiesThree;
+    // code
+    projectPop[i].technologies.forEach((tech, i) => {
+      const projectListItem = document.createElement('li');
 
-    projectList.append(projectListItemOne, projectListItemTwo, projectListItemThree);
+      projectListItem.classList.add('project_language');
+      projectListItem.textContent = tech;
+
+      projectList.append(projectListItem);
+    });
+    // projectListItemOne.classList.add('project_language');
+    // projectListItemOne.textContent = projectPop[i].technologiesOne;
+    // projectListItemTwo.classList.add('project_language');
+    // projectListItemTwo.textContent = projectPop[i].technologiesTwo;
+    // projectListItemThree.classList.add('project_language');
+    // projectListItemThree.textContent = projectPop[i].technologiesThree;
+
+    // projectList.append(projectListItemOne, projectListItemTwo, projectListItemThree);
     projectBody.append(projectHeading, projectList, projectBtn);
     project.append(projectImg, projectBody);
     projectSection.append(project);
@@ -192,9 +181,9 @@ const projectPopup = document.createElement('div');
 const closeBtn = document.createElement('i');
 const projectName = document.createElement('h3');
 const list = document.createElement('ul');
-const listItemOne = document.createElement('li');
-const listItemTwo = document.createElement('li');
-const listItemThree = document.createElement('li');
+// const listItemOne = document.createElement('li');
+// const listItemTwo = document.createElement('li');
+// const listItemThree = document.createElement('li');
 const imageContainer = document.createElement('div');
 const sliderCountainer = document.createElement('div');
 const slider = document.createElement('div');
@@ -219,6 +208,7 @@ closeBtn.addEventListener('click', () => {
   closeBtn.style.display = 'none';
   projectPopup.innerHTML = '';
   miniImageCountainer.innerHTML = '';
+  list.innerHTML = '';
 });
 setTimeout(() => {
   document.querySelectorAll('.project_btn').forEach((btn, index) => {
@@ -233,14 +223,22 @@ setTimeout(() => {
       projectName.textContent = projectPop[index].name;
       projectName.classList.add('popup_name');
 
-      listItemOne.textContent = projectPop[index].technologiesOne;
-      listItemOne.classList.add('popup_language');
-      listItemTwo.textContent = projectPop[index].technologiesTwo;
-      listItemTwo.classList.add('popup_language');
-      listItemThree.textContent = projectPop[index].technologiesThree;
-      listItemThree.classList.add('popup_language');
       list.classList.add('popup_languages');
-      list.append(listItemOne, listItemTwo, listItemThree);
+      // code
+      projectPop[index].technologies.forEach((tech) => {
+        const listItemTech = document.createElement('li');
+        listItemTech.textContent = tech;
+        listItemTech.classList.add('popup_language');
+        list.append(listItemTech);
+      });
+
+      // listItemOne.textContent = projectPop[index].technologiesOne;
+      // listItemOne.classList.add('popup_language');
+      // listItemTwo.textContent = projectPop[index].technologiesTwo;
+      // listItemTwo.classList.add('popup_language');
+      // listItemThree.textContent = projectPop[index].technologiesThree;
+      // listItemThree.classList.add('popup_language');
+      // list.append(listItemOne, listItemTwo, listItemThree);
 
       image.setAttribute('src', projectPop[index].featuredImage);
       image.classList.add('popup_img');
