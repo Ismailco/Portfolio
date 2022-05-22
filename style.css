@@ -576,8 +576,9 @@ codersrank-education {
   border: 1px solid #1a2236;
 }
 
-.about_btn a {
+.about_btn {
   color: #fff;
+  display: block;
 }
 
 .about_btn:hover {
