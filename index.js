@@ -34,7 +34,6 @@ document.querySelectorAll('.menu_link').forEach((link) => {
 });
 
 // Project popup
-
 // Create project object
 const projectPop = [
   {
@@ -139,9 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectBody = document.createElement('div');
     const projectHeading = document.createElement('h3');
     const projectList = document.createElement('ul');
-    // const projectListItemOne = document.createElement('li');
-    // const projectListItemTwo = document.createElement('li');
-    // const projectListItemThree = document.createElement('li');
     const projectBtn = document.createElement('button');
     projectBtn.classList.add('project_btn');
     projectBtn.textContent = 'See this Project';
@@ -153,23 +149,15 @@ document.addEventListener('DOMContentLoaded', () => {
     projectHeading.classList.add('project_name');
     projectHeading.textContent = projectPop[i].name;
     projectList.classList.add('project_languages');
-    // code
+
+    // Add tech tags
     projectPop[i].technologies.forEach((tech, i) => {
       const projectListItem = document.createElement('li');
-
       projectListItem.classList.add('project_language');
       projectListItem.textContent = tech;
-
       projectList.append(projectListItem);
     });
-    // projectListItemOne.classList.add('project_language');
-    // projectListItemOne.textContent = projectPop[i].technologiesOne;
-    // projectListItemTwo.classList.add('project_language');
-    // projectListItemTwo.textContent = projectPop[i].technologiesTwo;
-    // projectListItemThree.classList.add('project_language');
-    // projectListItemThree.textContent = projectPop[i].technologiesThree;
 
-    // projectList.append(projectListItemOne, projectListItemTwo, projectListItemThree);
     projectBody.append(projectHeading, projectList, projectBtn);
     project.append(projectImg, projectBody);
     projectSection.append(project);
@@ -181,26 +169,19 @@ const projectPopup = document.createElement('div');
 const closeBtn = document.createElement('i');
 const projectName = document.createElement('h3');
 const list = document.createElement('ul');
-// const listItemOne = document.createElement('li');
-// const listItemTwo = document.createElement('li');
-// const listItemThree = document.createElement('li');
 const imageContainer = document.createElement('div');
 const sliderCountainer = document.createElement('div');
 const slider = document.createElement('div');
 const image = document.createElement('img');
 
 const miniImageCountainer = document.createElement('div');
-
-// const miniImageOne = document.createElement('img');
-// const miniImageTwo = document.createElement('img');
-// const miniImageThree = document.createElement('img');
-// const miniImageFoor = document.createElement('img');
 const desc = document.createElement('p');
 const buttonContainer = document.createElement('div');
 const liveDemo = document.createElement('button');
 const sourceCode = document.createElement('button');
 
 imageContainer.classList.add('image_container_all');
+
 // Listen for a click on the projects links or close button
 closeBtn.addEventListener('click', () => {
   htmlBody.style.overflow = 'scroll';
@@ -219,26 +200,17 @@ setTimeout(() => {
 
       // create content
       closeBtn.classList.add('fas', 'fa-times', 'popup_close');
-
       projectName.textContent = projectPop[index].name;
       projectName.classList.add('popup_name');
 
       list.classList.add('popup_languages');
-      // code
+      // Add tech tags
       projectPop[index].technologies.forEach((tech) => {
         const listItemTech = document.createElement('li');
         listItemTech.textContent = tech;
         listItemTech.classList.add('popup_language');
         list.append(listItemTech);
       });
-
-      // listItemOne.textContent = projectPop[index].technologiesOne;
-      // listItemOne.classList.add('popup_language');
-      // listItemTwo.textContent = projectPop[index].technologiesTwo;
-      // listItemTwo.classList.add('popup_language');
-      // listItemThree.textContent = projectPop[index].technologiesThree;
-      // listItemThree.classList.add('popup_language');
-      // list.append(listItemOne, listItemTwo, listItemThree);
 
       image.setAttribute('src', projectPop[index].featuredImage);
       image.classList.add('popup_img');
@@ -249,6 +221,7 @@ setTimeout(() => {
 
       sliderCountainer.classList.add('slider_container');
 
+      // Add mini images
       projectPop[index].miniImg.forEach((imgSrc) => {
         const miniImage = document.createElement('img');
         miniImage.setAttribute('src', imgSrc);
@@ -256,18 +229,7 @@ setTimeout(() => {
         miniImageCountainer.append(miniImage);
       });
 
-      // miniImageOne.setAttribute('src', projectPop[index].miniImg1);
-      // miniImageOne.classList.add('popup_mini_img');
-      // miniImageTwo.setAttribute('src', projectPop[index].miniImg2);
-      // miniImageTwo.classList.add('popup_mini_img');
-      // miniImageThree.setAttribute('src', projectPop[index].miniImg3);
-      // miniImageThree.classList.add('popup_mini_img');
-      // miniImageFoor.setAttribute('src', projectPop[index].miniImg4);
-      // miniImageFoor.classList.add('popup_mini_img');
-
-      // miniImageCountainer.append(miniImageOne, miniImageTwo, miniImageThree, miniImageFoor);
       miniImageCountainer.classList.add('mini_img');
-
       imageContainer.append(sliderCountainer, miniImageCountainer);
       imageContainer.classList.add('img_slider');
 
