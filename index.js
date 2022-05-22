@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectList.classList.add('project_languages');
 
     // Add tech tags
-    projectPop[i].technologies.forEach((tech, i) => {
+    projectPop[i].technologies.forEach((tech) => {
       const projectListItem = document.createElement('li');
       projectListItem.classList.add('project_language');
       projectListItem.textContent = tech;
