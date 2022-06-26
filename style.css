@@ -436,11 +436,15 @@ body {
 
 .project_img {
   width: 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 .project_body {
   background-color: #1a2236;
   padding: 20px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
 .project_name {
@@ -903,6 +907,8 @@ codersrank-education {
     width: 100% !important;
     height: 100% !important;
     position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .profile_img {
@@ -911,6 +917,8 @@ codersrank-education {
     height: 100% !important;
     width: 100% !important;
     display: block !important;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .headline {
