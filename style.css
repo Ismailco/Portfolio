@@ -436,11 +436,15 @@ body {
 
 .project_img {
   width: 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 .project_body {
   background-color: #1a2236;
   padding: 20px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
 .project_name {
