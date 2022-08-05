@@ -116,7 +116,16 @@ const projectPop = [
     technologies: ['HTML/CSS', 'JavaScript', 'API', 'Flexbox'],
     linkToLiveVersion: 'https://ismailco.github.io/Leaderboard/dist/',
     linkToSource: 'https://github.com/Ismailco/Leaderboard',
-  }
+  },
+  {
+    name: 'Food App',
+    desc: 'This is a food and recipe app built using RoR, you can add food and create recipes with the food from the database. This user can log in to the app and store the recipes as private or share them publicly with all the users of the app. it also has a shopping list so the user can track foods that are not available anymore',
+    featuredImage: 'img/projects/foodApp/preview0.png',
+    miniImg: ['img/projects/foodApp/screenshot1.png', 'img/projects/foodApp/screenshot2.png', 'img/projects/foodApp/screenshot3.png', 'img/projects/foodApp/screenshot4.png', 'img/projects/foodApp/screenshot5.png'],
+    technologies: ['Ruby', 'Ruby on Rails', 'Auth'],
+    linkToLiveVersion: 'https://mv-food-recipe-app.herokuapp.com/',
+    linkToSource: 'https://github.com/Ismailco/ROR-GROUP-PROJECT',
+  },
 ];
 
 // Create the project section
