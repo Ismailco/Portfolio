@@ -116,16 +116,7 @@ const projectPop = [
     technologies: ['HTML/CSS', 'JavaScript', 'API', 'Flexbox'],
     linkToLiveVersion: 'https://ismailco.github.io/Leaderboard/dist/',
     linkToSource: 'https://github.com/Ismailco/Leaderboard',
-  },
-  {
-    name: 'Google Clone',
-    desc: 'This is a clone of the Google home page created using HTML and CSS',
-    featuredImage: 'img/projects/googleClone/preview1.png',
-    miniImg: ['img/projects/googleClone/preview0.png', 'img/projects/googleClone/preview1.png'],
-    technologies: ['HTML/CSS', 'Flexbox'],
-    linkToLiveVersion: 'https://ismailco.github.io/google-homepage/',
-    linkToSource: 'https://github.com/Ismailco/google-homepage',
-  },
+  }
 ];
 
 // Create the project section
