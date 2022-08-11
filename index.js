@@ -55,15 +55,6 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/Movies-Guru',
   },
   {
-    name: 'Weather App',
-    desc: 'A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.',
-    featuredImage: 'img/projects/weatherApp/screenshot0.png',
-    miniImg: ['img/projects/weatherApp/screenshot.png', 'img/projects/weatherApp/screenshot1.png', 'img/projects/weatherApp/screenshot2.png', 'img/projects/weatherApp/screenshot3.png'],
-    technologies: ['HTML/CSS', 'React', 'JavaScript', 'Flexbox'],
-    linkToLiveVersion: 'https://mv-react-weather-app.herokuapp.com/',
-    linkToSource: 'https://github.com/Ismailco/weather-app',
-  },
-  {
     name: 'Math magicians',
     desc: 'This is my first react.js App, that I build while learning React. The App has the functionality of Calculator and some mathematic quotes.',
     featuredImage: 'img/projects/mathMagicians/preview0.png',
@@ -89,6 +80,15 @@ const projectPop = [
     technologies: ['HTML/CSS', 'JavaScript', 'Flexbox', 'React'],
     linkToLiveVersion: 'https://space-traveller.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/space-travel',
+  },
+  {
+    name: 'Budget saver',
+    desc: 'This app is a budget saver app. It allows users to save their budget and track their expenses. It has a login system and a registration system, and it has a user dashboard that shows the user their budget and expenses. built with Ruby on Rails, and postgresql.',
+    featuredImage: 'img/projects/budgetSaver/logo.png',
+    miniImg: ['img/projects/budgetSaver/screenshot0.png', 'img/projects/budgetSaver/screenshot1.png', 'img/projects/budgetSaver/screenshot2.png', 'img/projects/budgetSaver/screenshot3.png', 'img/projects/budgetSaver/screenshot4.png', 'img/projects/budgetSaver/screenshot5.png'],
+    technologies: ['Ruby', 'Ruby on rails', 'Postgresql', 'Auth'],
+    linkToLiveVersion: 'https://budget-saver-app.herokuapp.com/',
+    linkToSource: 'https://github.com/Ismailco/budget-saver-new',
   },
   {
     name: 'Awesome-books',
@@ -122,9 +122,18 @@ const projectPop = [
     desc: 'This is a food and recipe app built using RoR, you can add food and create recipes with the food from the database. This user can log in to the app and store the recipes as private or share them publicly with all the users of the app. it also has a shopping list so the user can track foods that are not available anymore',
     featuredImage: 'img/projects/foodApp/foodApp.gif',
     miniImg: ['img/projects/foodApp/screenshot1.png', 'img/projects/foodApp/screenshot2.png', 'img/projects/foodApp/screenshot3.png', 'img/projects/foodApp/screenshot4.png', 'img/projects/foodApp/screenshot5.png'],
-    technologies: ['Ruby', 'Ruby on Rails', 'Auth'],
+    technologies: ['Ruby', 'Ruby on Rails', 'Postgresql', 'Auth'],
     linkToLiveVersion: 'https://mv-food-recipe-app.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/ROR-GROUP-PROJECT',
+  },
+  {
+    name: 'Weather App',
+    desc: 'A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.',
+    featuredImage: 'img/projects/weatherApp/screenshot0.png',
+    miniImg: ['img/projects/weatherApp/screenshot.png', 'img/projects/weatherApp/screenshot1.png', 'img/projects/weatherApp/screenshot2.png', 'img/projects/weatherApp/screenshot3.png'],
+    technologies: ['HTML/CSS', 'React', 'JavaScript', 'Flexbox'],
+    linkToLiveVersion: 'https://mv-react-weather-app.herokuapp.com/',
+    linkToSource: 'https://github.com/Ismailco/weather-app',
   },
 ];
 
