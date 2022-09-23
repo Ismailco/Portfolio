@@ -485,8 +485,7 @@ body {
 }
 
 .project_btn {
-  /* margin-top: 36px; */
-  bottom: 0px;
+  bottom: 1px;
   padding: 10px;
   background-color: #1a2236;
   color: #fff;
@@ -1012,7 +1011,6 @@ codersrank-education {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-start;
-    /* margin-top: 244px; */
   }
 
   .about_headline {

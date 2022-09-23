@@ -197,18 +197,18 @@ document.addEventListener('DOMContentLoaded', () => {
 // create html elements
 const projectPopup = document.createElement('div');
 const closeBtn = document.createElement('i');
-const projectName = document.createElement('h3');
+// const projectName = document.createElement('h3');
 const list = document.createElement('ul');
 const imageContainer = document.createElement('div');
-const sliderCountainer = document.createElement('div');
-const slider = document.createElement('div');
-const image = document.createElement('img');
+// const sliderCountainer = document.createElement('div');
+// const slider = document.createElement('div');
+// const image = document.createElement('img');
 
 const miniImageCountainer = document.createElement('div');
-const desc = document.createElement('p');
-const buttonContainer = document.createElement('div');
-const liveDemo = document.createElement('button');
-const sourceCode = document.createElement('button');
+// const desc = document.createElement('p');
+// const buttonContainer = document.createElement('div');
+// const liveDemo = document.createElement('button');
+// const sourceCode = document.createElement('button');
 
 imageContainer.classList.add('image_container_all');
 
