@@ -1,7 +1,6 @@
 const menuButton = document.querySelector('.mobile_menu_btn');
 const mobileMenu = document.querySelector('.mobile_menu');
 const remButton = document.querySelector('.fa-times');
-const htmlBody = document.querySelector('body');
 
 // transition styles
 mobileMenu.style.right = '-800px';
@@ -159,6 +158,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectBtn = document.createElement('button');
     projectBtn.classList.add('project_btn');
     projectBtn.textContent = 'See this Project';
+    projectBtn.setAttribute('onclick', `window.location.href='${projectPop[i].linkToLiveVersion}'`);
+    const projectSrc = document.createElement('button');
+    projectSrc.classList.add('project_btn');
+    projectSrc.textContent = 'See Source Code';
+    projectSrc.setAttribute('onclick', `window.location.href='${projectPop[i].linkToSource}'`);
+    const projectDesc = document.createElement('p');
+    projectDesc.classList.add('project_desc');
+    projectDesc.textContent = projectPop[i].desc;
     project.classList.add('project');
     projectImg.classList.add('project_img');
     projectImg.setAttribute('src', projectPop[i].featuredImage);
@@ -167,6 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
     projectHeading.classList.add('project_name');
     projectHeading.textContent = projectPop[i].name;
     projectList.classList.add('project_languages');
+    const projectBtns = document.createElement('div');
+    const projectDetails = document.createElement('div');
 
     // Add tech tags
     projectPop[i].technologies.forEach((tech) => {
@@ -176,112 +185,13 @@ document.addEventListener('DOMContentLoaded', () => {
       projectList.append(projectListItem);
     });
 
-    projectBody.append(projectHeading, projectList, projectBtn);
+    projectDetails.append(projectHeading, projectList, projectDesc);
+    projectBtns.append(projectBtn, projectSrc);
+    projectBody.append(projectDetails, projectBtns);
     project.append(projectImg, projectBody);
     projectSection.append(project);
   }
 });
-
-// create html elements
-const projectPopup = document.createElement('div');
-const closeBtn = document.createElement('i');
-const projectName = document.createElement('h3');
-const list = document.createElement('ul');
-const imageContainer = document.createElement('div');
-const sliderCountainer = document.createElement('div');
-const slider = document.createElement('div');
-const image = document.createElement('img');
-
-const miniImageCountainer = document.createElement('div');
-const desc = document.createElement('p');
-const buttonContainer = document.createElement('div');
-const liveDemo = document.createElement('button');
-const sourceCode = document.createElement('button');
-
-imageContainer.classList.add('image_container_all');
-
-// Listen for a click on the projects links or close button
-closeBtn.addEventListener('click', () => {
-  htmlBody.style.overflow = 'scroll';
-  projectPopup.style.display = 'none';
-  closeBtn.style.display = 'none';
-  projectPopup.innerHTML = '';
-  miniImageCountainer.innerHTML = '';
-  list.innerHTML = '';
-});
-setTimeout(() => {
-  document.querySelectorAll('.project_btn').forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-      htmlBody.style.overflow = 'hidden';
-      projectPopup.style.display = 'flex';
-      closeBtn.style.display = 'block';
-
-      // create content
-      closeBtn.classList.add('fas', 'fa-times', 'popup_close');
-      projectName.textContent = projectPop[index].name;
-      projectName.classList.add('popup_name');
-
-      list.classList.add('popup_languages');
-      // Add tech tags
-      projectPop[index].technologies.forEach((tech) => {
-        const listItemTech = document.createElement('li');
-        listItemTech.textContent = tech;
-        listItemTech.classList.add('popup_language');
-        list.append(listItemTech);
-      });
-
-      image.setAttribute('src', projectPop[index].featuredImage);
-      image.classList.add('popup_img');
-      slider.appendChild(image);
-
-      slider.classList.add('slider');
-      sliderCountainer.appendChild(slider);
-
-      sliderCountainer.classList.add('slider_container');
-
-      // Add mini images
-      projectPop[index].miniImg.forEach((imgSrc) => {
-        const miniImage = document.createElement('img');
-        miniImage.setAttribute('src', imgSrc);
-        miniImage.classList.add('popup_mini_img');
-        miniImageCountainer.append(miniImage);
-      });
-
-      miniImageCountainer.classList.add('mini_img');
-      imageContainer.append(sliderCountainer, miniImageCountainer);
-      imageContainer.classList.add('img_slider');
-
-      desc.classList.add('popup_text');
-      desc.textContent = projectPop[index].desc;
-
-      liveDemo.classList.add('popup_btn');
-      liveDemo.innerHTML = `<a href = "${projectPop[index].linkToLiveVersion}">See live <i class="fas fa-share-square"></i></a>`;
-
-      sourceCode.classList.add('popup_btn');
-      sourceCode.innerHTML = `<a href = "${projectPop[index].linkToSource}">See source <i class="fab fa-github"></i></a>`;
-
-      buttonContainer.classList.add('popup_buttons');
-      buttonContainer.append(liveDemo, sourceCode);
-
-      projectPopup.classList.add('project_pop');
-      projectPopup.append(closeBtn, projectName, list, imageContainer, desc, buttonContainer);
-
-      document.body.appendChild(projectPopup);
-
-      // change mini image
-      const popMiniImg = document.querySelectorAll('.popup_mini_img');
-      popMiniImg.forEach((img) => {
-        img.addEventListener('click', () => {
-          for (let x = 0; x < popMiniImg.length; x += 1) {
-            popMiniImg[x].style.border = '1px solid transparent';
-          }
-          img.style.border = '1px solid #000';
-          image.setAttribute('src', img.src);
-        });
-      });
-    });
-  });
-}, 1);
 
 // form validation
 const form = document.querySelector('.form');

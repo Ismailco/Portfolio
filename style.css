@@ -202,13 +202,14 @@ body {
 /* Projects section */
 
 .projects_container {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
 .projects_headline {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 16px;
   margin-bottom: 32px;
   font-family: 'Playfair Display', serif;
@@ -443,8 +444,12 @@ body {
 .project_body {
   background-color: #1a2236;
   padding: 20px;
+  height: 400px;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project_name {
@@ -472,8 +477,15 @@ body {
   margin-top: 22px;
 }
 
+.project_desc {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  color: #fff;
+}
+
 .project_btn {
-  margin-top: 36px;
+  bottom: 1px;
   padding: 10px;
   background-color: #1a2236;
   color: #fff;
@@ -935,7 +947,7 @@ codersrank-education {
   /* Project section */
 
   #projects_section {
-    margin-top: 150px;
+    margin: 150px auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -945,10 +957,10 @@ codersrank-education {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     position: relative;
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .project_headline_img {
@@ -958,6 +970,7 @@ codersrank-education {
     background-size: 100px;
     height: 558px;
     margin-left: 60px;
+    margin-top: 90px;
     position: absolute;
   }
 
@@ -968,17 +981,19 @@ codersrank-education {
 
   .project {
     margin: 5px;
-    margin-right: 50px;
     padding: 0;
-    width: 340px;
+    width: 400px;
+    height: 600px;
+    margin-right: 0px auto;
   }
 
   .project:nth-child(1) {
-    margin-left: 400px;
+    margin-left: 420px;
   }
 
   .project img {
-    height: 200px;
+    min-height: 250px;
+    height: 250px;
   }
 
   .popup_name {
@@ -996,7 +1011,6 @@ codersrank-education {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 244px;
   }
 
   .about_headline {
