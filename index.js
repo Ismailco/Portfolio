@@ -1,7 +1,6 @@
 const menuButton = document.querySelector('.mobile_menu_btn');
 const mobileMenu = document.querySelector('.mobile_menu');
 const remButton = document.querySelector('.fa-times');
-const htmlBody = document.querySelector('body');
 
 // transition styles
 mobileMenu.style.right = '-800px';
