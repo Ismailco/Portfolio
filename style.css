@@ -202,13 +202,14 @@ body {
 /* Projects section */
 
 .projects_container {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
 .projects_headline {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 16px;
   margin-bottom: 32px;
   font-family: 'Playfair Display', serif;
@@ -936,6 +937,7 @@ codersrank-education {
 
   #projects_section {
     margin-top: 150px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -958,6 +960,7 @@ codersrank-education {
     background-size: 100px;
     height: 558px;
     margin-left: 60px;
+    margin-top: 90px;
     position: absolute;
   }
 
@@ -996,7 +999,7 @@ codersrank-education {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 244px;
+    /* margin-top: 244px; */
   }
 
   .about_headline {
