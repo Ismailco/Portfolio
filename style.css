@@ -1013,6 +1013,11 @@ codersrank-education {
     align-items: flex-start;
   }
 
+  .about_main {
+    margin-left: 15%;
+    width: 40%;
+  }
+
   .about_headline {
     font-size: 110px;
     line-height: 110px;
@@ -1021,6 +1026,7 @@ codersrank-education {
   .about_text {
     font-size: 14px;
     line-height: 21px;
+    width: 100%;
   }
 
   .tech {
