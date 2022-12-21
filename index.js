@@ -68,7 +68,7 @@ const projectPop = [
     featuredImage: 'img/projects/spaceTravel/screenshot0.png',
     miniImg: ['img/projects/spaceTravel/screenshot.png', 'img/projects/spaceTravel/screenshot1.png', 'img/projects/spaceTravel/screenshot2.png', 'img/projects/spaceTravel/screenshot3.png'],
     technologies: ['HTML/CSS', 'JavaScript', 'Flexbox', 'React'],
-    linkToLiveVersion: 'https://space-traveller.herokuapp.com/',
+    linkToLiveVersion: 'https://morning-sands-55154.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/space-travel',
   },
   {
@@ -86,7 +86,7 @@ const projectPop = [
     featuredImage: 'img/projects/mathMagicians/preview0.png',
     miniImg: ['img/projects/mathMagicians/preview0.png', 'img/projects/mathMagicians/screenshot1.png', 'img/projects/mathMagicians/screenshot.png'],
     technologies: ['HTML/CSS', 'React', 'Javascript'],
-    linkToLiveVersion: 'https://mv-calculator.herokuapp.com',
+    linkToLiveVersion: 'https://mathmagician2022.netlify.app/',
     linkToSource: 'https://github.com/Ismailco/math-magicians',
   },
   {
@@ -133,15 +133,6 @@ const projectPop = [
     technologies: ['Ruby', 'Ruby on Rails', 'Postgresql', 'Auth'],
     linkToLiveVersion: 'https://mv-food-recipe-app.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/ROR-GROUP-PROJECT',
-  },
-  {
-    name: 'Weather App',
-    desc: 'A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.',
-    featuredImage: 'img/projects/weatherApp/screenshot0.png',
-    miniImg: ['img/projects/weatherApp/screenshot.png', 'img/projects/weatherApp/screenshot1.png', 'img/projects/weatherApp/screenshot2.png', 'img/projects/weatherApp/screenshot3.png'],
-    technologies: ['HTML/CSS', 'React', 'JavaScript', 'Flexbox'],
-    linkToLiveVersion: 'https://mv-react-weather-app.herokuapp.com/',
-    linkToSource: 'https://github.com/Ismailco/weather-app',
   },
 ];
 
