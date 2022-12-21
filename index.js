@@ -134,15 +134,6 @@ const projectPop = [
     linkToLiveVersion: 'https://mv-food-recipe-app.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/ROR-GROUP-PROJECT',
   },
-  {
-    name: 'Weather App',
-    desc: 'A Weather app created using React.js and Metaweather API. the app has the functionality to search any city in the world and get the weather data for the week.',
-    featuredImage: 'img/projects/weatherApp/screenshot0.png',
-    miniImg: ['img/projects/weatherApp/screenshot.png', 'img/projects/weatherApp/screenshot1.png', 'img/projects/weatherApp/screenshot2.png', 'img/projects/weatherApp/screenshot3.png'],
-    technologies: ['HTML/CSS', 'React', 'JavaScript', 'Flexbox'],
-    linkToLiveVersion: 'https://mv-react-weather-app.herokuapp.com/',
-    linkToSource: 'https://github.com/Ismailco/weather-app',
-  },
 ];
 
 // Create the project section
