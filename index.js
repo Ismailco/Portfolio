@@ -86,7 +86,7 @@ const projectPop = [
     featuredImage: 'img/projects/mathMagicians/preview0.png',
     miniImg: ['img/projects/mathMagicians/preview0.png', 'img/projects/mathMagicians/screenshot1.png', 'img/projects/mathMagicians/screenshot.png'],
     technologies: ['HTML/CSS', 'React', 'Javascript'],
-    linkToLiveVersion: 'https://mv-calculator.herokuapp.com',
+    linkToLiveVersion: 'https://mathmagician2022.netlify.app/',
     linkToSource: 'https://github.com/Ismailco/math-magicians',
   },
   {
