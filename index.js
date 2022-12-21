@@ -68,7 +68,7 @@ const projectPop = [
     featuredImage: 'img/projects/spaceTravel/screenshot0.png',
     miniImg: ['img/projects/spaceTravel/screenshot.png', 'img/projects/spaceTravel/screenshot1.png', 'img/projects/spaceTravel/screenshot2.png', 'img/projects/spaceTravel/screenshot3.png'],
     technologies: ['HTML/CSS', 'JavaScript', 'Flexbox', 'React'],
-    linkToLiveVersion: 'https://space-traveller.herokuapp.com/',
+    linkToLiveVersion: 'https://morning-sands-55154.herokuapp.com/',
     linkToSource: 'https://github.com/Ismailco/space-travel',
   },
   {
