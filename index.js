@@ -77,7 +77,7 @@ const projectPop = [
     featuredImage: 'img/projects/budgetSaver/logo.png',
     miniImg: ['img/projects/budgetSaver/screenshot0.png', 'img/projects/budgetSaver/screenshot1.png', 'img/projects/budgetSaver/screenshot2.png', 'img/projects/budgetSaver/screenshot3.png', 'img/projects/budgetSaver/screenshot4.png', 'img/projects/budgetSaver/screenshot5.png'],
     technologies: ['Ruby', 'Ruby on rails', 'Postgresql', 'Auth'],
-    linkToLiveVersion: 'https://budget-saver-app.herokuapp.com/',
+    linkToLiveVersion: 'https://budget-saver.fly.dev/',
     linkToSource: 'https://github.com/Ismailco/budget-saver-new',
   },
   {
