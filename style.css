@@ -1187,3 +1187,26 @@ codersrank-education {
     height: 600px;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a2236 !important;
+    color: #fff !important;
+  }
+  a,
+  i,
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #fff !important;
+  }
+  button {
+    background-color: #425a95 !important;
+    color: #fff !important;
+  }
+  footer {
+    background-color: #121929 !important;
+  }
+} */
