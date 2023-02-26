@@ -126,6 +126,15 @@ const projectPop = [
     linkToSource: 'https://github.com/Ismailco/Leaderboard',
   },
   {
+    name: 'Postcare',
+    desc: 'This is a doctor appointment app built in collaboration white "David" a fellow software developer. The users can create an account or log in, to have access to a dashboard with all information, also the app has a chat functionality and a way to get todo tasks from the doctor',
+    featuredImage: 'img/projects/postcare/postcare.gif',
+    miniImg: [],
+    technologies: ['Front-end', 'React', 'Tailwind', 'Redux', 'Laravel'],
+    linkToLiveVersion: 'https://postcare.pages.dev/',
+    linkToSource: 'https://github.com/PostOP-app/Postcare-app',
+  },
+  {
     name: 'Food App',
     desc: 'This is a food and recipe app built using RoR, you can add food and create recipes with the food from the database. This user can log in to the app and store the recipes as private or share them publicly with all the users of the app. it also has a shopping list so the user can track foods that are not available anymore',
     featuredImage: 'img/projects/foodApp/foodApp.gif',
