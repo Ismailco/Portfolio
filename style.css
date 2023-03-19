@@ -431,6 +431,9 @@ body {
 
 .project {
   grid-column: 1 / 6;
+  border: solid 1px #e0e0e0;
+  border-radius: 9px;
+  margin: 10px 5px;
   display: flex;
   flex-direction: column;
 }
@@ -444,7 +447,7 @@ body {
 .project_body {
   background-color: #1a2236;
   padding: 20px;
-  height: 400px;
+  height: 170px;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
   display: flex;
@@ -983,7 +986,7 @@ codersrank-education {
     margin: 5px;
     padding: 0;
     width: 400px;
-    height: 600px;
+    /* height: 600px; */
     margin-right: 0px auto;
   }
 

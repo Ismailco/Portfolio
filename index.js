@@ -163,9 +163,9 @@ document.addEventListener('DOMContentLoaded', () => {
     projectSrc.classList.add('project_btn');
     projectSrc.textContent = 'See Source Code';
     projectSrc.setAttribute('onclick', `window.location.href='${projectPop[i].linkToSource}'`);
-    const projectDesc = document.createElement('p');
-    projectDesc.classList.add('project_desc');
-    projectDesc.textContent = projectPop[i].desc;
+    // const projectDesc = document.createElement('p');
+    // projectDesc.classList.add('project_desc');
+    // projectDesc.textContent = projectPop[i].desc;
     project.classList.add('project');
     projectImg.classList.add('project_img');
     projectImg.setAttribute('src', projectPop[i].featuredImage);
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
       projectList.append(projectListItem);
     });
 
-    projectDetails.append(projectHeading, projectList, projectDesc);
+    projectDetails.append(projectHeading, projectList);
     projectBtns.append(projectBtn, projectSrc);
     projectBody.append(projectDetails, projectBtns);
     project.append(projectImg, projectBody);
