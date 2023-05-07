@@ -1,9 +1,15 @@
-# Portfolio
+<a name="readme-top"></a>
 
-> This is my portfolio created using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to add some animation and functionality.
+<div align="center">
 
-![screenshot](img/screenshot2.png)
-![screenshot](img/screenshot.png)
+  <img src="/img/Icons/fav.png" width="500px" heigth="auto"/>
+  <br/>
+
+  <h1><b>Front End Developer Portfolio</b></h1>
+
+</div>
+
+> This is my portfolio created using HTML for the skeleton and CSS, FlexBox for the styling and positioning of the elements on the page. JavaScript to add some animation and functionality. I also used Grid to create the layout of the page.
 
 ## Built With
 
@@ -14,16 +20,9 @@
 - JavaScript
 - Github Pages
 
-## Live Demo
+## Live Website
 
-[Live Demo Link](https://ismailcourr.ml/)
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-- copy the repo URL
-- $ git clone (repo URL)
+[Live Website](https://ismailcourr.tech/)
 
 ## Author
 
@@ -31,11 +30,3 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@ismailcourr](https://www.twitter.com/ismailcourr)
 - LinkedIn: [ismailcourr](https://www.linkedin.com/in/ismailcourr/)
 - My Website: [ismailcourr.ml](https://www.ismailcourr.ml)
-
-## 🤝 Contributing
-
-if you have any ideas to add to the project Please let me know
-
-## Show your support
-
-Give a ⭐️ if you like this project!
